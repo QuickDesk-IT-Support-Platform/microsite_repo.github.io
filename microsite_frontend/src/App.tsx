@@ -9,14 +9,15 @@ import Metodologia from './pages/Metodologia'
 import Resultados from './pages/Resultados'
 import Equipe from './pages/Equipe'
 import Documentacao from './pages/Documentacao'
+import Home from './pages/Home'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className='min-h-screen flex flex-col'>
       <Header />
       <main>
+        <Home />
         <Sobre />
         <Objetivos />
         <Metodologia />

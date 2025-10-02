@@ -3,6 +3,9 @@ import TeamMemberCard from '../shared/components/TeamMemberCard'
 import Airton from '../assets/airton.jpeg'
 import Diogo from '../assets/diogo.jpeg'
 import Nuno from '../assets/nuno.jpeg'
+import Joao from '../assets/joao.jpeg'
+import Rafa from '../assets/rafa.jpeg'
+import Bruno from '../assets/bruno.jpeg'
 const mockedTeamMembers = [
     {
         name: "Airton Moreira",
@@ -20,13 +23,13 @@ const mockedTeamMembers = [
         name: "Bruno Charao",
         role: "UX/UI Designer",
         description: "Designer apaixonada por criar experiências digitais intuitivas e centradas no usuário.",
-        imageUrl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face"
+        imageUrl: Bruno
     },
     {
-        name: "João Vitor Batista Domingues Ferreira",
+        name: "João Ferreira",
         role: "Full Stack Developer",
         description: "Desenvolvedor versátil com conhecimento em tecnologias front-end e back-end modernas.",
-        imageUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+        imageUrl: Joao
     },
     {
         name: "Nuno Vieira",
@@ -35,41 +38,45 @@ const mockedTeamMembers = [
         imageUrl: Nuno
     },
     {
-        name: "Lucas Mendes",
+        name: "Rafa",
         role: "QA Engineer",
         description: "Analista de qualidade focado em garantir a excelência dos produtos através de testes automatizados.",
-        imageUrl: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face"
+        imageUrl: Rafa
     }
 ]
 
 
 export default function Equipe() {
   return (
-    <section id ="equipe" className='py-30 min-h-screen bg-white '>
-      <div className='flex flex-col items-center justify-center h-full'>
-        <h1 className='text-3xl font-bold mb-4'>Equipe</h1>
-        <h2>Esta seção contém informações sobre a equipe do projeto.</h2>
+    <section id ="equipe" className='py-30 min-h-screen bg-white dark:bg-black dark:text-white '>
+
+      <div className='xl:flex xl:flex-row items-center justify-center  h-full flex flex-col '>
+            <div className='flex flex-col items-center justify-center h-full'>
+                    <h1 className='text-3xl font-bold mb-4'>Equipe</h1>
+                    <h2>Esta seção contém informações sobre a equipe do projeto.</h2>
+
+                </div>
+                
+                <div className='flex flex-col items-center justify-center  '>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 p-10'>
+                    {
+                        mockedTeamMembers.map((member, index) => (
+                        <TeamMemberCard 
+                            key={index}
+                            name={member.name}
+                            role={member.role}
+                            description={member.description}
+                            imageUrl={member.imageUrl}
+                        />
+                        ))
+                    }
+                    
+                    </div>
+                </div>
+
 
       </div>
      
-     <div className='flex flex-col items-center justify-center  '>
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 p-10'>
-        {
-            mockedTeamMembers.map((member, index) => (
-            <TeamMemberCard 
-                key={index}
-                name={member.name}
-                role={member.role}
-                description={member.description}
-                imageUrl={member.imageUrl}
-            />
-            ))
-        }
-        
-        </div>
-     </div>
-
-
     </section>
   )
 }
