@@ -21,9 +21,9 @@ function App() {
         <Sobre />
         <Objetivos />
         <Metodologia />
-        <Resultados />
         <Equipe />
         <Documentacao />
+        <Resultados />
 
       </main>
     </div>
