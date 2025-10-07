@@ -71,3 +71,9 @@ export default defineConfig([
   },
 ])
 ```
+
+
+git add src/pages/Documentacao.tsx
+git commit -m "feat: criação da página de Documentação
+
+- Adiciona o componente Documentacao com renderização dinâmica dos cards de documentação(mocks temos de alterar depois)."

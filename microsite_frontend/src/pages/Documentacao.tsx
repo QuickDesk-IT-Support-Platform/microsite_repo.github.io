@@ -2,20 +2,22 @@ import React from 'react'
 import CardDocumentacao from '../shared/components/CardDocumentacao'
 export default function Documentacao() {
   const docs = [
+   
     {
-      title: "Documentação da API",
-      description: "Detalhes sobre a API RESTful utilizada no projeto.",
-      link: "https://example.com/api-docs",
-      docType: "API",
-      date: "2023-10-01",
-      status: "Concluido"
-    },
-    {
-      title: "Guia do Usuário",
-      description: "Instruções detalhadas para os usuários finais.",
-      link: "https://example.com/user-guide",
+      title: "Personas QuickDesk-IT",
+      description: "Perfis de usuários representativos do sistema.",
+      link: "https://uapt33090-my.sharepoint.com/:w:/g/personal/agm_ua_pt/EfjHIE8xgGRCi2lOT5U9G9UBc_7llU2hiMssfNqtXkIhuw?e=PMSXgZ",
       docType: "Manual",
       date: "2023-11-15",
+      status: "Em Andamento"
+    },
+    {
+
+      title:"User Stories QuickDesk-IT",
+      description: "Conjunto de histórias de usuário para o desenvolvimento ágil.",
+      link: "https://uapt33090-my.sharepoint.com/:w:/g/personal/agm_ua_pt/EcgtOCHcT8JDq56fqCdfvvYBKoI3_p1iF-JVDAbQuhDX9Q?e=4Qgqb9",
+      docType: "Agile",
+      date: "2023-09-10",
       status: "Em Andamento"
     },
     {
@@ -24,6 +26,14 @@ export default function Documentacao() {
       link: "https://example.com/tech-docs",
       docType: "Técnica",
       date: "2024-01-20",
+      status: "Planeado"
+    }, 
+    {
+      title: "Documentação da API",
+      description: "Detalhes sobre a API RESTful utilizada no projeto.",
+      link: "https://example.com/api-docs",
+      docType: "API",
+      date: "2023-10-01",
       status: "Planeado"
     }
     
@@ -48,6 +58,9 @@ export default function Documentacao() {
           />
         ))}
       </div>
+      
+
+ 
     </section>
   )
 }

@@ -39,10 +39,8 @@ export default function CardDocumentacao({title,description,link,docType,date,st
 
       </div>
       
-      
-      
-      
-      <p>{description}</p>
+    
+      <span>{description}</span>
       <div className='flex flex-row justify-between items-center mt-4'>
         
         <div className='flex flex-row space-x-2 items-center'>
@@ -50,7 +48,17 @@ export default function CardDocumentacao({title,description,link,docType,date,st
           <span className='text-sm'>{date}</span>
         </div>
         <div>
-          <button className='h-full w-32 bg-black bg-orange-300 text-white p-2 rounded-2xl dark:bg-gray-200 dark:text-black hover:bg-blue-700 transition duration-300 hover:cursor-pointer'>
+          <button className='h-full w-32  bg-black text-white p-2 rounded-2xl dark:bg-gray-200 dark:text-black hover:bg-blue-700 transition duration-300 hover:cursor-pointer mr-2 '
+            onClick={() => window.open(link, '_blank')}
+          >
+            <div className='flex flex-row justify-center items-center'>
+              <span className="text-sm font-bold">
+                  Visualizar
+              </span>
+            </div>
+          </button>
+          
+          {/* <button className='h-full w-32  bg-orange-300 text-white p-2 rounded-2xl dark:bg-gray-200 dark:text-black hover:bg-blue-700 transition duration-300 hover:cursor-pointer'>
             <div className='flex flex-row justify-center items-center'>
               <img src={DownloadIcon} alt="Download Icon" className='w-4 h-4 inline-block mr-2 '/>
               <span className="text-sm font-bold">
@@ -58,7 +66,7 @@ export default function CardDocumentacao({title,description,link,docType,date,st
               </span>
             </div>
         
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
