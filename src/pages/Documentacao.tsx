@@ -33,7 +33,7 @@ export default function Documentacao() {
 
       title:"Functional Requirements ",
       description: "Documento que descreve as funcionalidades principais que o sistema deve oferecer, detalhando o comportamento esperado para satisfazer as necessidades dos utilizadores.",
-      link: "https://uapt33090-my.sharepoint.com/:w:/g/personal/agm_ua_pt/EQbXWQdo-6xGqMM_EWCAq5oBaNHmv8mMIVl6Lx-t0UdF2g?e=UGsWlr",
+      link: "https://uapt33090-my.sharepoint.com/:w:/g/personal/agm_ua_pt/ESnEzkcoB1JFgQBx2B4DAm0Bef8MBi8wLFUOZgv_b9U4yw?e=DPDapg",
       docType: "Agile",
       date: "13-10-2025",
       status: "Em Andamento"
@@ -42,7 +42,7 @@ export default function Documentacao() {
 
       title:"Non-Functional Requirements ",
       description: "Documento que define os requisitos de qualidade e desempenho do sistema, como segurança, usabilidade, fiabilidade e eficiência.",
-      link: "https://uapt33090-my.sharepoint.com/:w:/g/personal/agm_ua_pt/ETup_7x30ytGiLiTS0UL2F8BkPbCw4jYE35EZa0nmDYbew?e=oakn6g",
+      link: "https://uapt33090-my.sharepoint.com/:w:/g/personal/agm_ua_pt/Efh5jKB057hEhOZ9pSNkJNoBP_akKqLdliaXh_klPlwbJA?e=eVp5tY",
       docType: "Manual",
       date: "13-10-2025",
       status: "Em Andamento"
@@ -51,7 +51,7 @@ export default function Documentacao() {
 
       title:"Acceptance Criterias ",
       description: "Documento que define os critérios de aceitação para as funcionalidades do sistema.",
-      link: "https://uapt33090-my.sharepoint.com/:w:/g/personal/agm_ua_pt/EfoJ5pGjm-9LoUvFVre-CVIBjNWkYfVzACWGjw_B5tRaig?e=6RhtcD",
+      link: "https://uapt33090-my.sharepoint.com/:w:/g/personal/agm_ua_pt/EYD0WH0tynBIosWYIOgYMD0BWeE14pOf_7HzFk9LR9wM6g?e=Jdhegj",
       docType: "Manual",
       date: "13-10-2025",
       status: "Em Andamento"
