@@ -9,7 +9,7 @@ export default function Documentacao() {
       link: "https://uapt33090-my.sharepoint.com/:w:/g/personal/agm_ua_pt/EfjHIE8xgGRCi2lOT5U9G9UBc_7llU2hiMssfNqtXkIhuw?e=PMSXgZ",
       docType: "Manual",
       date: "06-10-2025",
-      status: "Em Andamento"
+      status: "Concluido"
     },
     {
 
@@ -18,7 +18,7 @@ export default function Documentacao() {
       link: "https://uapt33090-my.sharepoint.com/:w:/g/personal/agm_ua_pt/EcgtOCHcT8JDq56fqCdfvvYBKoI3_p1iF-JVDAbQuhDX9Q?e=4Qgqb9",
       docType: "Manual",
       date: "06-10-2025",
-      status: "Em Andamento"
+      status: "Concluido"
     },
      {
 
@@ -55,7 +55,17 @@ export default function Documentacao() {
       docType: "Manual",
       date: "13-10-2025",
       status: "Em Andamento"
+    },
+      {
+
+      title:"Database Diagram ",
+      description: "Diagrama que ilustra a estrutura do banco de dados.",
+      link: "https://drive.google.com/file/d/1uXe57AFQDdYNpmRPugiijl3ZJ9kISfKk/view?usp=sharing",
+      docType: "Manual",
+      date: "14-10-2025",
+      status: "Em Andamento"
     }
+
   ];
 
   return (

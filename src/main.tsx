@@ -11,7 +11,7 @@ import Resultados from './pages/Resultados.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/microsite_repo.github.io'>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/objetivos" element={<Objetivos />} />
