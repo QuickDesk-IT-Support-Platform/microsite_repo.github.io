@@ -1,7 +1,7 @@
 interface TeamMember {
     name: string
     role: string
-    description: string
+    description?: string
     imageUrl: string
 }
 export default function TeamMemberCard({ name, role, description, imageUrl }: TeamMember) {

@@ -10,37 +10,31 @@ const mockedTeamMembers = [
     {
         name: "Airton Moreira",
         role: "FullStack and DevOps Engineer",
-        description: "Especialista em gestão de produtos com 8 anos de experiência em desenvolvimento de soluções inovadoras.",
         imageUrl: Airton
     },
     {
         name: "Diogo Oliveira",
         role: "BackEnd Engineer",
-        description: "Desenvolvedor sênior com expertise em arquiteturas escaláveis e liderança técnica de equipes.",
         imageUrl: Diogo
     },
     {
         name: "Bruno Charao",
         role: "FullStack and QA Analyst",
-        description: "Designer apaixonada por criar experiências digitais intuitivas e centradas no usuário.",
         imageUrl: Bruno
     },
     {
         name: "João Ferreira",
         role: "BackEnd Engineer",
-        description: "Desenvolvedor versátil com conhecimento em tecnologias front-end e back-end modernas.",
         imageUrl: Joao
     },
     {
         name: "Nuno Vieira",
         role: "BackEnd and Architect Engineer ",
-        description: "Especialista em infraestrutura cloud e automação de processos de desenvolvimento e deploy.",
         imageUrl: Nuno
     },
     {
         name: "Rafael Rodrigues",
         role: "FrontEnd Engineer",
-        description: "Analista de qualidade focado em garantir a excelência dos produtos através de testes automatizados.",
         imageUrl: Rafa
     }
 ]
@@ -64,7 +58,6 @@ export default function Equipe() {
                             key={index}
                             name={member.name}
                             role={member.role}
-                            description={member.description}
                             imageUrl={member.imageUrl}
                         />
                         ))
