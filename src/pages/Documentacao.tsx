@@ -1,4 +1,4 @@
-import React from 'react'
+// JSX-only component — explicit React import not required
 import CardDocumentacao from '../shared/components/CardDocumentacao'
 export default function Documentacao() {
   const docs = [
@@ -71,7 +71,6 @@ export default function Documentacao() {
             title={doc.title}
             description={doc.description}
             link={doc.link}
-            docType={doc.docType}
             date={doc.date}
             status={doc.status} 
           />

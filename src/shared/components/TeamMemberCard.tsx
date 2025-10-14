@@ -1,7 +1,3 @@
-import React from 'react'
-
-
-
 interface TeamMember {
     name: string
     role: string
@@ -18,7 +14,7 @@ export default function TeamMemberCard({ name, role, description, imageUrl }: Te
 
       <h3 className='sm:text-xl font-semibold mb-2'>{name}</h3>
       <p className='text-sm  text-gray-600'>{role}</p>
-      {/* <p className='mt-2'>{description}</p> */}
+      <p className='mt-2 text-sm text-gray-700 dark:text-gray-300 text-center'>{description}</p>
     </div>
   )
 }

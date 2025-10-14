@@ -1,4 +1,4 @@
-import React from 'react'
+// JSX-only component — explicit React import not required
 
 interface NormalCardProps {
     title:string;

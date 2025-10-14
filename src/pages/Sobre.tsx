@@ -1,4 +1,4 @@
-import React from 'react'
+// JSX-only component — explicit React import not required
 import { CiCalendar,CiLocationOn } from "react-icons/ci";
 import {FiUsers} from "react-icons/fi"
 import { GrUserManager } from "react-icons/gr";

@@ -1,4 +1,4 @@
-import React from 'react'
+// JSX-only component — explicit React import not required
 import TeamMemberCard from '../shared/components/TeamMemberCard'
 import Airton from '../assets/airton.jpeg'
 import Diogo from '../assets/diogo.jpeg'

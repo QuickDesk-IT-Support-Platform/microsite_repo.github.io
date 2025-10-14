@@ -10,6 +10,7 @@ import Equipe from './pages/Equipe.tsx';
 import Resultados from './pages/Resultados.tsx';
 
 createRoot(document.getElementById('root')!).render(
+  <StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
@@ -20,4 +21,5 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/documentacao" element={<Documentacao />} />
       </Routes>
     </BrowserRouter>
+  </StrictMode>
 )

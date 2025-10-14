@@ -1,17 +1,15 @@
-import React from 'react'
+// JSX-only component — explicit React import not required
 import FileIcon from '../../assets/fileicon.png'
 import CalendarIcon from '../../assets/calendar.png'
-import DownloadIcon from '../../assets/download_icon.png'
 interface CardDocumentacaoProps {
-    title: string;
-    description: string;
-    link?: string;
-    docType?: string; // Optional prop for documentation type
-    date?: string; // Optional prop for date
-    status: string; // Status of the documentation
+  title: string;
+  description: string;
+  link?: string;
+  date?: string; // Optional prop for date
+  status: string; // Status of the documentation
 }
 
-export default function CardDocumentacao({title,description,link,docType,date,status}:CardDocumentacaoProps) {
+export default function CardDocumentacao({title,description,link,date,status}:CardDocumentacaoProps) {
   return (
     <div className='p-5 shadow-2xl hover:shadow-lg transition duration-300 rounded-2xl dark:bg-[#121212] border-gray-900 dark:shadow-none' >
       

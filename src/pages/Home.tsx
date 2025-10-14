@@ -1,4 +1,4 @@
-import React from 'react'
+// JSX-only component — explicit React import not required
 import GithubIcon from '../assets/github_icon.png'
 export default function Home() {
   const handleArrowClick = () => {
