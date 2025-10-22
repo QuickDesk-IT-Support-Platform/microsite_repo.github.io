@@ -33,7 +33,7 @@ export default function Header() {
   return (
     <section id="site-header" className='flex fixed w-full bg-white p-4 flex-row items-center justify-between border-b border-b-gray-300  dark:bg-black/50 dark:text-white dark:border-b-gray-100/20 dark:border-b-0 z-50 '>
       {/* Ícone do menu hambúrguer */}
-      <div className="sm:hidden flex items-center">
+      <div className="sm:hidden flex items-center ">
         <button
           onClick={() => setOpen(!open)}
           className="p-2 rounded focus:outline-none"
@@ -53,7 +53,7 @@ export default function Header() {
         <span className='font-bold text-'>QuickDesk</span>
       </div>
 
-      <nav className='hidden sm:flex justify-around w-full'>
+      <nav className='hidden sm:flex justify-around w-full  sm:items-center sm:justify-around' >
         <ul className='flex flex-row space-x-10 justify-center w-full '>
           <li><a href="#calendar" onClick={handleScroll('calendar')} className='font-bold'>Calendário</a></li>
           <li><a href="#equipe" onClick={handleScroll('equipe')} className='font-bold'>Equipe</a></li>

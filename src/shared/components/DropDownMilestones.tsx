@@ -28,9 +28,9 @@ export default function DropDownMilestones() {
         aria-haspopup="menu"
         aria-expanded={open}
         onClick={() => setOpen((s) => !s)}
-        className="px-3 py-2 rounded-md hover:bg-orange-500 text-white bg-neutral-600 focus:outline-none"
+        className=" rounded-md hover:underline hover:cursor-pointer text-black font-bold focus:outline-none"
       >
-        Milestones <span className="ml-2">▾</span>
+        Milestones {open ? <span className='ml-2 text-sm'>▲</span> : <span className='ml-2 text-sm'>▼</span>}
       </button>
 
       {open && (
