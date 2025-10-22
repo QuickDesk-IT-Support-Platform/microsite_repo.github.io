@@ -26,7 +26,7 @@ export default function Documentacao() {
       description: "Diagrama de arquitetura do sistema.",
       link: "https://app.diagrams.net/#G1d_i9kkfodf59BMB0B-4O6N8jaP_wTCIU#%7B%22pageId%22%3A%22UNiyZUibPOel2K6aCp1S%22%7D",
       docType: "Manual",
-      date: "06-10-2025",
+      date: "13-10-2025",
       status: "Em Andamento"
     }
     , {
@@ -69,7 +69,7 @@ export default function Documentacao() {
   ];
 
   return (
-    <section id="documentacao" className='py-30 min-h-screen bg-white dark:bg-black/89 dark:text-white'>
+    <section id="documentacao" className='py-30 min-h-screen bg-gray-50 dark:bg-black/89 dark:text-white'>
       <div className='flex flex-col  items-center justify-center text-center'> 
         <h1 className='text-4xl font-bold mb-5'>Documentação</h1>
         <span className='text-xl'>Nesta seção,encontrará toda a documentação relacionada ao projeto.</span>

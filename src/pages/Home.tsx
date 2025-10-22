@@ -10,7 +10,7 @@ export default function Home() {
   };
 
   return (
-    <section id ="home" className='min-h-screen bg-white dark:bg-black/89 dark:text-white'>
+    <section id ="home" className='min-h-screen bg-gray-50 dark:bg-black/89 dark:text-white'>
       <div className='flex flex-col items-center justify-center  h-screen '>
         <h1 className='text-xl sm:text-4xl font-bold'>QuickDesk – IT support platform</h1>
         <span className='mt-5 max-w-3xl text-sm text-center sm:text-xl'>Desenvolvimento de uma plataforma web de gestão de serviços para otimização de processos de suporte, com portal self-service, automação de tickets e dashboards em tempo real.</span>

@@ -42,7 +42,7 @@ const mockedTeamMembers = [
 
 export default function Equipe() {
   return (
-    <section id ="equipe" className='py-30 min-h-screen bg-white dark:bg-black/89 dark:text-white '>
+    <section id ="equipe" className='py-30 min-h-screen bg-gray-50 dark:bg-black/89 dark:text-white '>
 
       <div className='xl:flex xl:flex-row items-center justify-center  h-full flex flex-col '>
             <div className='flex flex-col  text-center h-full'>

@@ -6,7 +6,7 @@ interface TeamMember {
 }
 export default function TeamMemberCard({ name, role, description, imageUrl }: TeamMember) {
   return (
-    <div className='flex flex-col  p-4  sm:w-70 rounded-lg  items-center  shadow-2xl dark:shadow-none dark:bg-[#121212]'>
+    <div className='flex flex-col  p-4  sm:w-70 rounded-lg  items-center  shadow-xl dark:shadow-none dark:bg-[#121212]'>
       <div className='flex sm:h-60 sm:w-60 rounded-4xl self-center mb-5 overflow-hidden'>
          <img src={imageUrl} alt={name}  />
 

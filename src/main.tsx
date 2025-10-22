@@ -3,22 +3,27 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Objetivos from './pages/Objetivos.tsx';
-import Metodologia from './pages/Metodologia.tsx';
+import Milestones from './pages/MilesTones/Inception.tsx';
 import Documentacao from './pages/Documentacao.tsx';
 import Equipe from './pages/Equipe.tsx';
-import Resultados from './pages/Resultados.tsx';
-
+import Calendario from './pages/Calendar.tsx';
+import Elaboration from './pages/MilesTones/Elaboration.tsx';
+import Construction from './pages/MilesTones/Construction.tsx';
+import Transition from './pages/MilesTones/Transition.tsx';
+import Inception from './pages/MilesTones/Inception.tsx';
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter basename='/microsite_repo.github.io'>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/objetivos" element={<Objetivos />} />
-        <Route path="/metodologia" element={<Metodologia />} />
-        <Route path="/resultados" element={<Resultados />} />
+        <Route path="/Milestones" element={<Milestones />} />
+        <Route path="/calendario" element={<Calendario />} />
         <Route path="/equipe" element={<Equipe />} />
         <Route path="/documentacao" element={<Documentacao />} />
+        <Route path="/milestones/construction" element={<Construction />} />
+        <Route path="/milestones/elaboration" element={<Elaboration />} />
+        <Route path="/milestones/transition" element={<Transition />} />
+        <Route path="/milestones/inception" element={<Inception />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>

@@ -1,7 +1,7 @@
 
 export default function Footer() {
   return (
-    <div className='bg-gray-500/10  text-black  flex min-h-50 dark:dark:bg-[#0E0E0E] dark:text-white'>
+    <div className='bg-white  text-black  flex min-h-50 dark:dark:bg-[#0E0E0E] dark:text-white'>
        
        <div className='flex flex-row  justify-around py-10 w-full'>
 

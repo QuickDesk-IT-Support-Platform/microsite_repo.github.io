@@ -1,83 +1,124 @@
-// JSX-only component — explicit React import not required
-import { CiCalendar,CiLocationOn } from "react-icons/ci";
-import {FiUsers} from "react-icons/fi"
+import { CiCalendar, CiLocationOn } from "react-icons/ci";
+import { FiUsers } from "react-icons/fi";
 import { GrUserManager } from "react-icons/gr";
+
 export default function Sobre() {
+  const infoItems = [
+    {
+      icon: CiCalendar,
+      title: "Duração",
+      content: "Setembro de 2025 - julho de 2026"
+    },
+    {
+      icon: CiLocationOn,
+      title: "Instituição",
+      content: "Universidade de Aveiro"
+    },
+    {
+      icon: FiUsers,
+      title: "Equipe",
+      content: "6 Estudantes"
+    }
+  ];
+
+  const orientadores = [
+    { nome: "José Luís Oliveira", email: "jlo@ua.pt" },
+    { nome: "João Almeida", email: "joao.rafael.almeida@ua.pt" }
+  ];
+
   return (
-   <section id ="sobre" className='min-h-screen dark:text-white bg-white dark:bg-black/89 py-10'>
-    <div className='flex flex-col items-center justify-center '>
-        <h2 className='text-4xl font-bold mt-20 mb-5'>Sobre o Projeto</h2>
-        <p className='max-w-3xl text-center text-xl '>Uma visão abrangente do projeto desenvolvido como trabalho final de licenciatura.</p>
-    </div>
-   
-    <div className='flex flex-col lg:grid lg:grid-cols-2 gap-10 p-10 mt-10  mx-auto'>
-      <div className='p-10 rounded-2xl minh-h-100 flex flex-col justify-center shadow-2xl dark:shadow-none dark:bg-[#121212] '>
-        <h1 className='text-2xl font-medium mb-4'>Resumo</h1>
-        <span className=' sm:text-xl'>
-          O QuickDeskIT é uma plataforma de gestão de serviços que centraliza pedidos de assistência, incidentes e ativos. Inspirado em soluções como o ServiceNow e o EasyVista, o projeto tem como objetivo otimizar a comunicação entre utilizadores e equipas de suporte, automatizar processos e melhorar a eficiência na resolução de pedidos.        </span>
-      </div>
-
-
-      <div className='p-10 rounded-2xl min-h-100 flex flex-col  shadow-2xl dark:shadow-none dark:bg-[#121212] '>
-        <h1 className='text-2xl font-medium mb-4 text-center'>Informações do projeto</h1>
-
-        <div className='flex flex-col space-y-5 mb-5'>
-            <div className="flex flex-row items-center">
-              <div>
-                  <CiCalendar className='w-15 h-15'/>
-              </div>
-
-              <div className='ml-5'>
-                <h2 className='text-lg font-medium'>Duração</h2>
-                <span>Setembro de 2025 - julho de 2026</span>
-              </div>
-
-            </div>
-             <div className="flex flex-row items-center">
-              <div>
-                  <CiLocationOn className='w-15 h-15'/>
-              </div>
-
-              <div className='ml-5'>
-                <h2 className='text-lg font-medium'>Instituição</h2>
-                <span>Universidade de Aveiro</span>
-              </div>
-
-            </div>
-             <div className="flex flex-row items-center">
-              <div>
-                  <FiUsers className='w-15 h-15'/>
-              </div>
-
-              <div className='ml-5'>
-                <h2 className='text-lg font-medium'>Equipe</h2>
-                <span>6 Estudantes</span>
-              </div>
-
-            </div>
-            <div className="flex flex-row items-center ">
-              <div>
-                  <GrUserManager className='w-15 h-15'/>
-              </div>
-
-              <div className='ml-5'>
-                <h2 className='text-lg font-medium'>Orientadores</h2>
-                <div className='flex flex-col space-y-1 bg-gray-100 dark:text-black px-5 py-2 sm:px-10 sm:py-2 rounded-lg'>
-                  <a href="mailto:jlo@ua.pt" className='hover:underline'>José Luís Oliveira  </a>
-                  <a href="mailto:joao.rafael.almeida@ua.pt" className='hover:underline'>João Almeida </a>
-                </div>
-
-              </div>
-
-            </div>
+    <section id="sobre" className="min-h-screen bg-gray-50 dark:from-black dark:to-gray-900 dark:text-white py-20">
+      {/* Header Section */}
+      <div className="max-w-7xl mx-auto px-6 mb-16">
+        <div className="text-center space-y-4">
+         
+          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-black to-gray-800 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent">
+            Sobre o Projeto
+          </h2>
+          <p className="max-w-3xl mx-auto text-lg text-gray-600 dark:text-gray-300">
+            Uma visão abrangente do projeto desenvolvido como trabalho final de licenciatura.
+          </p>
         </div>
-
-        
       </div>
-      
-      
-    </div>
-  
-   </section>
-  )
+
+      {/* Content Grid */}
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="grid lg:grid-cols-2 gap-8">
+          {/* Resumo Card */}
+          <div className="group relative bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-gray-700/50 overflow-hidden">
+            <div className="absolute  dark:from-blue-500/10 dark:to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            
+            <div className="relative z-10">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-1.5 h-8 bg-black rounded-full" />
+                <h3 className="text-3xl font-bold">Resumo</h3>
+              </div>
+              <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+                O QuickDeskIT é uma plataforma de gestão de serviços que centraliza pedidos de assistência, 
+                incidentes e ativos. Inspirado em soluções como o ServiceNow e o EasyVista, o projeto tem 
+                como objetivo otimizar a comunicação entre utilizadores e equipas de suporte, automatizar 
+                processos e melhorar a eficiência na resolução de pedidos.
+              </p>
+            </div>
+          </div>
+
+          {/* Informações Card */}
+          <div className="group relative bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-gray-700/50 overflow-hidden">
+            <div className="absolute  dark:from-purple-500/10 dark:to-pink-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            
+            <div className="relative z-10">
+              <div className="flex items-center gap-3 mb-8">
+                <div className="w-1.5 h-8 bg-black rounded-full" />
+                <h3 className="text-3xl font-bold">Informações do Projeto</h3>
+              </div>
+
+              <div className="space-y-6">
+                {/* Info Items */}
+                {infoItems.map((item, idx) => (
+                  <div key={idx} className="flex items-start gap-4 group/item">
+                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg group-hover/item:scale-110 transition-transform duration-300">
+                      <item.icon className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="flex-1">
+                      <h4 className="text-lg font-semibold mb-1">{item.title}</h4>
+                      <p className="text-gray-600 dark:text-gray-400">{item.content}</p>
+                    </div>
+                  </div>
+                ))}
+
+                {/* Orientadores */}
+                <div className="flex items-start gap-4 group/item">
+                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg group-hover/item:scale-110 transition-transform duration-300">
+                    <GrUserManager className="w-6 h-6 text-white" />
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="text-lg font-semibold mb-3">Orientadores</h4>
+                    <div className="bg-gradient-to-r from-gray-50 to-gray-100 dark:from-gray-700/50 dark:to-gray-800/50 rounded-xl p-4 space-y-2 border border-gray-200 dark:border-gray-600/30">
+                      {orientadores.map((orientador, idx) => (
+                        <a
+                          key={idx}
+                          href={`mailto:${orientador.email}`}
+                          className="block px-4 py-2 rounded-lg hover:bg-white dark:hover:bg-gray-600/50 transition-all duration-300 group/link"
+                        >
+                          <div className="flex items-center justify-between">
+                            <span className="font-medium group-hover/link:text-blue-600 dark:group-hover/link:text-blue-400 transition-colors">
+                              {orientador.nome}
+                            </span>
+                            <svg className="w-4 h-4 opacity-0 group-hover/link:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                          </div>
+                          <span className="text-sm text-gray-500 dark:text-gray-400">{orientador.email}</span>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
