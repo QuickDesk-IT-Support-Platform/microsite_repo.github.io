@@ -46,12 +46,12 @@ export default function CardDocumentacao({title,description,link,date,status}:Ca
           <span className='text-sm'>{date}</span>
         </div>
         <div>
-          <button className='h-full w-32  bg-black/70 text-white p-2 rounded-2xl dark:bg-white/20 dark:text-white hover:bg-blue-700 transition duration-300 hover:cursor-pointer mr-2 '
+          <button className='h-full w-32 bg-gradient-to-r from-orange-500 to-orange-600 text-white p-2 rounded-2xl dark:bg-white/20 dark:text-white hover:bg-blue-700 transition duration-300 hover:cursor-pointer mr-2 '
             onClick={() => window.open(link, '_blank')}
           >
             <div className='flex flex-row justify-center items-center'>
               <span className="text-sm font-bold">
-                  Visualizar
+                  View
               </span>
             </div>
           </button>

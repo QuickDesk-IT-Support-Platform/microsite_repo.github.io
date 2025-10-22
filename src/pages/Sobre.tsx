@@ -6,18 +6,18 @@ export default function Sobre() {
   const infoItems = [
     {
       icon: CiCalendar,
-      title: "Duração",
+      title: "Duration",
       content: "Setembro de 2025 - julho de 2026"
     },
     {
       icon: CiLocationOn,
-      title: "Instituição",
+      title: "Institution",
       content: "Universidade de Aveiro"
     },
     {
       icon: FiUsers,
-      title: "Equipe",
-      content: "6 Estudantes"
+      title: "Team Members",
+      content: "6 Students"
     }
   ];
 
@@ -27,16 +27,16 @@ export default function Sobre() {
   ];
 
   return (
-    <section id="sobre" className="min-h-screen bg-gray-50 dark:from-black dark:to-gray-900 dark:text-white py-20">
+    <section id="sobre" className="min-h-screen bg-gray-50 dark:from-black dark:to-gray-900 dark:text-white py-30">
       {/* Header Section */}
       <div className="max-w-7xl mx-auto px-6 mb-16">
         <div className="text-center space-y-4">
          
-          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-black to-gray-800 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent">
-            Sobre o Projeto
+          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-black to-gray-800 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent">
+            About the Project
           </h2>
           <p className="max-w-3xl mx-auto text-lg text-gray-600 dark:text-gray-300">
-            Uma visão abrangente do projeto desenvolvido como trabalho final de licenciatura.
+            An overview of the project developed as a final year thesis.
           </p>
         </div>
       </div>
@@ -51,13 +51,10 @@ export default function Sobre() {
             <div className="relative z-10">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-1.5 h-8 bg-black rounded-full" />
-                <h3 className="text-3xl font-bold">Resumo</h3>
+                <h3 className="text-3xl font-bold">Summary</h3>
               </div>
               <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-                O QuickDeskIT é uma plataforma de gestão de serviços que centraliza pedidos de assistência, 
-                incidentes e ativos. Inspirado em soluções como o ServiceNow e o EasyVista, o projeto tem 
-                como objetivo otimizar a comunicação entre utilizadores e equipas de suporte, automatizar 
-                processos e melhorar a eficiência na resolução de pedidos.
+             QuickDeskIT is a service management platform that centralizes support requests, incidents, and assets. Inspired by solutions such as ServiceNow and EasyVista, the project aims to optimize communication between users and support teams, automate processes, and improve efficiency in request resolution
               </p>
             </div>
           </div>
@@ -69,7 +66,7 @@ export default function Sobre() {
             <div className="relative z-10">
               <div className="flex items-center gap-3 mb-8">
                 <div className="w-1.5 h-8 bg-black rounded-full" />
-                <h3 className="text-3xl font-bold">Informações do Projeto</h3>
+                <h3 className="text-3xl font-bold">Project Information</h3>
               </div>
 
               <div className="space-y-6">
@@ -92,7 +89,7 @@ export default function Sobre() {
                     <GrUserManager className="w-6 h-6 text-white" />
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-lg font-semibold mb-3">Orientadores</h4>
+                    <h4 className="text-lg font-semibold mb-3">Project Supervisors</h4>
                     <div className="bg-gradient-to-r from-gray-50 to-gray-100 dark:from-gray-700/50 dark:to-gray-800/50 rounded-xl p-4 space-y-2 border border-gray-200 dark:border-gray-600/30">
                       {orientadores.map((orientador, idx) => (
                         <a

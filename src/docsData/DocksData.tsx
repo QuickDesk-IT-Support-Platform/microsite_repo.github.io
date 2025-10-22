@@ -2,7 +2,7 @@
    
     {
       title: "Personas QuickDesk-IT",
-      description: "Perfis de usuários representativos do sistema.",
+      description: "User personas representing different types of users for the QuickDesk-IT platform.",
       link: "https://uapt33090-my.sharepoint.com/:b:/g/personal/agm_ua_pt/ERAkAV1UB9FElt9_WWlIT8ABS3U8tc_OUk3Q5T6yHZP2kA?e=jkp18L",
       docType: "Manual",
       date: "06-10-2025",
@@ -11,7 +11,7 @@
     {
 
       title:"User Stories QuickDesk-IT",
-      description: "Conjunto de histórias de usuário para o desenvolvimento ágil.",
+      description: "Detailed user stories outlining the features and functionalities of the QuickDesk-IT platform from the perspective of different user roles.",
       link: "https://uapt33090-my.sharepoint.com/:b:/g/personal/agm_ua_pt/EYOl0-jl4clJlkV-dq8RIsABk0SEv-iBuZfTxSuGbE0KRA?e=f6X86E",
       docType: "Manual",
       date: "06-10-2025",
@@ -20,7 +20,7 @@
      {
 
       title:"System Architecture ",
-      description: "Diagrama de arquitetura do sistema.",
+      description: "Document that outlines the overall system architecture of the QuickDesk-IT platform",
       link: "https://app.diagrams.net/#G1d_i9kkfodf59BMB0B-4O6N8jaP_wTCIU#%7B%22pageId%22%3A%22UNiyZUibPOel2K6aCp1S%22%7D",
       docType: "Manual",
       date: "13-10-2025",
@@ -29,7 +29,7 @@
     , {
 
       title:"Functional Requirements ",
-      description: "Documento que descreve as funcionalidades principais que o sistema deve oferecer, detalhando o comportamento esperado para satisfazer as necessidades dos utilizadores.",
+      description: "Document that describes the main functionalities that the system must offer, detailing the expected behavior to meet user needs.",
       link: "https://uapt33090-my.sharepoint.com/:w:/g/personal/agm_ua_pt/ESnEzkcoB1JFgQBx2B4DAm0Bef8MBi8wLFUOZgv_b9U4yw?e=DPDapg",
       docType: "Agile",
       date: "13-10-2025",
@@ -38,7 +38,7 @@
      {
 
       title:"Non-Functional Requirements ",
-      description: "Documento que define os requisitos de qualidade e desempenho do sistema, como segurança, usabilidade, fiabilidade e eficiência.",
+      description: "Document that specifies the quality attributes, system performance, security, usability, and other non-functional aspects that the QuickDesk-IT platform must adhere to.",
       link: "https://uapt33090-my.sharepoint.com/:w:/g/personal/agm_ua_pt/Efh5jKB057hEhOZ9pSNkJNoBP_akKqLdliaXh_klPlwbJA?e=eVp5tY",
       docType: "Manual",
       date: "13-10-2025",

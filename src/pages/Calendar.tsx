@@ -7,7 +7,7 @@ export default function CalendarProject() {
 
 
   return (
-    <section id="calendar" className=' min-h-screen py-4 space-y-4 bg-gray-50 dark:bg-black/89 dark:text-white p-4 md:p-0  '>
+    <section id="calendar" className=' min-h-screen  space-y-4 bg-gray-50 dark:bg-black/89 dark:text-white p-4 md:py-20 '>
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="mb-12">
@@ -63,7 +63,7 @@ export default function CalendarProject() {
                     <td className="px-3 md:px-20 py-6 align-top">
                       <ul className="space-y-5 md:space-y-2">
                         {milestone.tasks.map((task, taskIdx) => (
-                          <li key={taskIdx} className="flex items-start gap-2">
+                          <li key={taskIdx} className="flex  items-center  gap-2">
                             <CheckSquare className="w-4 h-4 text-gray-400 dark:text-gray-500 flex-shrink-0 mt-0.5" />
                             <span className="text-sm md:text-xl text-gray-700 dark:text-gray-300">
                               {task}

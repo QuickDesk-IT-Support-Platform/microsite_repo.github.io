@@ -45,9 +45,9 @@ export default function Equipe() {
     <section id ="equipe" className='py-30 min-h-screen bg-gray-50 dark:bg-black/89 dark:text-white '>
 
       <div className='xl:flex xl:flex-row items-center justify-center  h-full flex flex-col '>
-            <div className='flex flex-col  text-center h-full'>
-                    <h1 className='text-3xl font-bold mb-4'>Equipe</h1>
-                    <h2>Esta seção contém informações sobre a equipe do projeto.</h2>
+            <div className='flex flex-col  text-center h-full md:mr-100'>
+                    <h1 className='text-3xl font-bold mb-4 '>TEAM</h1>
+                    <h2>Meet our project team</h2>
 
                 </div>
                 

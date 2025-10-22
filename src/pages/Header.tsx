@@ -55,9 +55,9 @@ export default function Header() {
 
       <nav className='hidden sm:flex justify-around w-full  sm:items-center sm:justify-around' >
         <ul className='flex flex-row space-x-10 justify-center w-full '>
-          <li><a href="#calendar" onClick={handleScroll('calendar')} className='font-bold'>Calendário</a></li>
-          <li><a href="#equipe" onClick={handleScroll('equipe')} className='font-bold'>Equipe</a></li>
-          <li><a href="#documentacao" onClick={handleScroll('documentacao')} className='font-bold'>Documentação</a></li>
+          <li><a href="#calendar" onClick={handleScroll('calendar')} className='font-bold'>Calendar</a></li>
+          <li><a href="#equipe" onClick={handleScroll('equipe')} className='font-bold'>Team</a></li>
+          <li><a href="#documentacao" onClick={handleScroll('documentacao')} className='font-bold'>Documentation</a></li>
           <DropDownMilestones />
           {/*<ToggleDarkMode />*/}
         </ul>
@@ -67,9 +67,9 @@ export default function Header() {
       {open && (
         <div className="absolute top-16 left-0 w-full bg-white dark:bg-[#121212] shadow-lg sm:hidden z-50">
           <ul className='flex flex-col items-center space-y-4 py-4'>
-            <li><a href="#calendar" onClick={handleScroll('calendar')} className='font-bold'>Calendário</a></li>
-            <li><a href="#equipe" onClick={handleScroll('equipe')} className='font-bold'>Equipe</a></li>
-            <li><a href="#documentacao" onClick={handleScroll('documentacao')} className='font-bold'>Documentação</a></li>
+            <li><a href="#calendar" onClick={handleScroll('calendar')} className='font-bold'>Calendar</a></li>
+            <li><a href="#equipe" onClick={handleScroll('equipe')} className='font-bold'>Team</a></li>
+            <li><a href="#documentacao" onClick={handleScroll('documentacao')} className='font-bold'>Documentation</a></li>
             <DropDownMilestones />
 
           {/*<ToggleDarkMode />*/}
