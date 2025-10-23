@@ -44,12 +44,12 @@ export default function Inception() {
     { name: 'Market Analysis Overview', indent: true },
   ];
   return (
-    <div className="flex min-h-screen">
+    <div className="flex min-h-screen ">
       <Header />
 
     <div className="flex pt-18 w-full">
       {/* leftbar */}
-      <div className="hidden md:flex md:flex-col md:w-1/4 md:bg-gray-200 p-4 md:border-t-2 md:border-gray-300 md:sticky md:top-16">
+      <div className="hidden md:flex md:flex-col md:w-2/8 md:bg-gray-200 p-4 md:border-t-2 md:border-gray-300 md:sticky md:top-16">
               {navItems.map((item, idx) => (
             <div key={idx}>
               {item.isHeader ? (
@@ -78,7 +78,7 @@ export default function Inception() {
 
       </div>
   {/* main content */}
-  <div id="inception-main" className="w-full md:w-3/4 p-4 md:p-20 bg-white md:h-[calc(100vh-4rem)] overflow-y-auto">
+  <div id="inception-main" className="w-full md:w-8/8 p-4 md:p-20 bg-white md:h-[calc(100vh-4rem)] overflow-y-auto">
         <h1 className="font-bold text-4xl text-center md:text-start">M1 - Inception</h1>        
         <div className="mt-10 justify-center flex flex-col items-center space-y-6">
         
@@ -97,16 +97,16 @@ export default function Inception() {
 
 
         <section id="Project Overview" className="my-10 p-5 text-center">
-          <div className={`shadow-2xl rounded-2xl p-5 ${activeNav === 'Project Overview' ? 'bg-gradient-to-r from-orange-500 to-orange-600 ' : ' '}`}>
+          <div className={`shadow-2xl rounded-2xl p-5 bg-gray-200`}>
              <h2 className="text-2xl md:text-3xl mb-2 font-bold">Project Overview</h2>
             <p className="text-sm md:text-xl">Developing a web platform to optimize IT support services through self-service, ticket automation, and real-time dashboards.</p>
           </div>
           
         </section>
-        <section id="Context" className={`my-10 p-5 rounded-2xl  shadow-2xl ${activeNav === 'Context' ? ' bg-gradient-to-r from-orange-500 to-orange-600' : ' '}`}>
+        <section id="Context" className={`my-10 p-5 rounded-2xl  shadow-2xl ${activeNav === 'Context' ? ' bg-gray-200' : ' '}`}>
           <div className=" p-5 rounded-2xl ">
             <div className="flex flex-row  gap-3 items-center pb-3" >
-               <span className={`w-2   h-10 rounded-2xl ${activeNav === 'Context' ? 'bg-amber-50' : 'bg-orange-600/80'}`}></span>
+               <span className={`w-2   h-10 rounded-2xl bg-orange-600/80`}></span>
               <h2 className="text-2xl font-extrabold ">Context</h2>
             </div>
         
@@ -126,9 +126,9 @@ export default function Inception() {
             </p>
           </div>
         </section>
-        <section id="Problem" className={`my-10 p-5 rounded-2xl  shadow-2xl ${activeNav === 'Problem' ? ' bg-gradient-to-r from-orange-500 to-orange-600' : ' '}`}>
+        <section id="Problem" className={`my-10 p-5 rounded-2xl  shadow-2xl ${activeNav === 'Problem' ? 'bg-gray-200' : ' '}`}>
             <div className="flex flex-row  gap-3 items-center pb-3" >
-               <span className={`w-2   h-10 rounded-2xl ${activeNav === 'Problem' ? 'bg-amber-50' : 'bg-orange-600/80'}`}></span>
+               <span className={`w-2   h-10 rounded-2xl bg-orange-600/80`}></span>
               <h2 className="text-2xl font-extrabold ">Problem</h2>
             </div>
               <p className="mb-4 leading-relaxed  text-sm md:text-xl font-[Sans-serif] text-justify dark:text-slate-200">
@@ -189,23 +189,23 @@ export default function Inception() {
               </p>
 
         </section>
-        <section id="Expected Results" className={`my-10 p-5 rounded-2xl  shadow-2xl ${activeNav === 'Expected Results' ? 'bg-gradient-to-r from-orange-500 to-orange-600' : ''}`}>
+        <section id="Expected Results" className={`my-10 p-5 rounded-2xl  shadow-2xl ${activeNav === 'Expected Results' ? 'bg-gray-200' : ''}`}>
           <h2 className="text-2xl font-bold text-center">Expected Results</h2>
           <p>This section details the expected results of the project.</p>
         </section>
-        <section id="High-Level Architecture" className={`my-10 p-5 rounded-2xl  shadow-2xl ${activeNav === 'High-Level Architecture' ? 'bg-gradient-to-r from-orange-500 to-orange-600' : ''}`}>
+        <section id="High-Level Architecture" className={`my-10 p-5 rounded-2xl  shadow-2xl ${activeNav === 'High-Level Architecture' ? 'bg-gray-200' : ''}`}>
           <h2 className="text-2xl font-bold text-center">High-Level Architecture</h2>
           <p>This section presents the high-level architecture of the solution.</p>
         </section>
-        <section id="State of the Art" className={`my-10 p-5 rounded-2xl  shadow-2xl ${activeNav === 'State of the Art' ? 'bg-gradient-to-r from-orange-500 to-orange-600' : ''}`}>
+        <section id="State of the Art" className={`my-10 p-5 rounded-2xl  shadow-2xl ${activeNav === 'State of the Art' ? 'bg-gray-200' : ''}`}>
           <h2 className="text-2xl font-bold text-center">State of the Art</h2>
           <p>This section reviews the current state of the art related to the project.</p>
         </section>
-        <section id="Selected Projects" className={`my-10 p-5 rounded-2xl  shadow-2xl ${activeNav === 'Selected Projects' ? 'bg-gradient-to-r from-orange-500 to-orange-600' : ''}`}>
+        <section id="Selected Projects" className={`my-10 p-5 rounded-2xl  shadow-2xl ${activeNav === 'Selected Projects' ? 'bg-gray-200' : ''}`}>
           <h2 className="text-2xl font-bold text-center">Selected Projects</h2>
           <p>This section highlights selected projects relevant to our work.</p>
         </section>
-        <section id="Market Analysis Overview" className={`my-10 p-5 rounded-2xl  shadow-2xl ${activeNav === 'Market Analysis Overview' ? 'bg-gradient-to-r from-orange-500 to-orange-600' : ''}`}>
+        <section id="Market Analysis Overview" className={`my-10 p-5 rounded-2xl  shadow-2xl ${activeNav === 'Market Analysis Overview' ? 'bg-gray-200' : ''}`}>
           <h2 className="text-2xl font-bold text-center">Market Analysis Overview</h2>
           <p>This section provides an overview of the market analysis conducted.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo autem minus, eligendi delectus modi tenetur non accusamus, sapiente voluptas ratione labore eaque, necessitatibus ea nulla commodi at dolorum optio. Labore?</p>

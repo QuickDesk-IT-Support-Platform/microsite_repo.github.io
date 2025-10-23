@@ -53,7 +53,7 @@ export default function Sobre() {
                 <div className="w-1.5 h-8 bg-black rounded-full" />
                 <h3 className="text-3xl font-bold">Summary</h3>
               </div>
-              <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+              <p className="text-lg sm:text-2xl leading-relaxed text-gray-700 dark:text-gray-300">
              QuickDeskIT is a service management platform that centralizes support requests, incidents, and assets. Inspired by solutions such as ServiceNow and EasyVista, the project aims to optimize communication between users and support teams, automate processes, and improve efficiency in request resolution
               </p>
             </div>
@@ -98,7 +98,7 @@ export default function Sobre() {
                           className="block px-4 py-2 rounded-lg hover:bg-white dark:hover:bg-gray-600/50 transition-all duration-300 group/link"
                         >
                           <div className="flex items-center justify-between">
-                            <span className="font-medium group-hover/link:text-blue-600 dark:group-hover/link:text-blue-400 transition-colors">
+                            <span className=" font-medium group-hover/link:text-blue-600 dark:group-hover/link:text-blue-400 transition-colors">
                               {orientador.nome}
                             </span>
                             <svg className="w-4 h-4 opacity-0 group-hover/link:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">

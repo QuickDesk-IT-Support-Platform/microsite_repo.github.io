@@ -5,7 +5,7 @@ export default function Documentacao() {
 
 
   return (
-    <section id="documentacao" className='py-30 min-h-screen bg-gray-50 dark:bg-black/89 dark:text-white'>
+    <section id="documentacao" className='py-10 min-h-screen bg-gray-50 dark:bg-black/89 dark:text-white'>
       <div className='flex flex-col  items-center justify-center text-center'> 
         <h1 className='text-4xl font-bold mb-5'>Documentation</h1>
         <span className='text-xl'>In this section, you will find all the documentation related to the project.</span>

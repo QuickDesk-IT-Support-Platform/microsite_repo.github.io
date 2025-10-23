@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 {/*import ToggleDarkMode from '../shared/components/ToogleDarkMode';*/}
-import QuickDeskLogo from "../assets/quickdesk-icon.png";
 import DropDownMilestones from '../shared/components/DropDownMilestones';
-
+import QuickDeskPNG from '../assets/quickdesk-icon1.png';
 export default function Header() {
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
@@ -31,7 +30,7 @@ export default function Header() {
   };
 
   return (
-    <section id="site-header" className='flex fixed w-full bg-white p-4 flex-row items-center justify-between border-b border-b-gray-300  dark:bg-black/50 dark:text-white dark:border-b-gray-100/20 dark:border-b-0 z-50 '>
+    <section id="site-header" className='flex fixed w-full bg-white p-4 flex-row items-center justify-between  dark:bg-black/50 dark:text-white dark:border-b-gray-100/20 dark:border-b-0 z-50 '>
       {/* Ícone do menu hambúrguer */}
       <div className="sm:hidden flex items-center ">
         <button
@@ -49,8 +48,7 @@ export default function Header() {
       </div>
 
       <div className='flex items-center space-x-2 hover:cursor-pointer' onClick={handleScroll('home')}>
-        <img src={QuickDeskLogo} alt="QuickDesk Logo" className='h-10 ' />
-        <span className='font-bold text-'>QuickDesk</span>
+        <img src={QuickDeskPNG} alt="QuickDesk Logo" className='w-40'/>
       </div>
 
       <nav className='hidden sm:flex justify-around w-full  sm:items-center sm:justify-around' >
