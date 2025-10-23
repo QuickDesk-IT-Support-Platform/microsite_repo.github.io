@@ -11,14 +11,14 @@ interface CardDocumentacaoProps {
 
 export default function CardDocumentacao({title,description,link,date,status}:CardDocumentacaoProps) {
   return (
-    <div className='p-5 shadow-2xl hover:shadow-lg transition duration-300 rounded-2xl dark:bg-[#121212] border-gray-900 dark:shadow-none' >
+    <div className='p-3  shadow-2xl hover:shadow-lg transition duration-300 rounded-2xl dark:bg-[#121212] border-gray-900 dark:shadow-none' >
       
       <div className='flex flex-row items-center space-x-2 mb-4'>
         <div className='p-2 bg-gray-100 dark:bg-gray-800 rounded-full'>
           <img src={FileIcon} alt="File Icon" className='w-5 h-5 dark:invert' />
         </div>
         <div className='flex flex-col '>
-          <h2 className='text-lg font-bold'>{title}</h2>
+          <h2 className='text-md sm:text-sm font-bold'>{title}</h2>
           <div className='flex flex-row gap-2 text-sm'>
               {/* <span>{docType}</span>
               <span>1.8MB</span> */}

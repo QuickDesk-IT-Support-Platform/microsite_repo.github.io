@@ -78,7 +78,7 @@ export default function Sobre() {
                     </div>
                     <div className="flex-1">
                       <h4 className="text-lg font-semibold mb-1">{item.title}</h4>
-                      <p className="text-gray-600 dark:text-gray-400">{item.content}</p>
+                      <p className="text-gray-700 dark:text-gray-400">{item.content}</p>
                     </div>
                   </div>
                 ))}
@@ -93,7 +93,7 @@ export default function Sobre() {
                     <div className="bg-gradient-to-r from-gray-50 to-gray-100 dark:from-gray-700/50 dark:to-gray-800/50 rounded-xl p-4 space-y-2 border border-gray-200 dark:border-gray-600/30">
                       {orientadores.map((orientador, idx) => (
                         <a
-                          key={idx}
+                          key={idx} 
                           href={`mailto:${orientador.email}`}
                           className="block px-4 py-2 rounded-lg hover:bg-white dark:hover:bg-gray-600/50 transition-all duration-300 group/link"
                         >

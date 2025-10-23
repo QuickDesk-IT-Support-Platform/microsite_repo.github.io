@@ -18,25 +18,34 @@ export default function Home() {
       <div className='flex flex-col items-center justify-center  h-screen '>
         
         <div>
-          <img src={QuickDeskPNG} alt="QuickDesk Logo" className='w-100 sm:w-130 mt-5'/>
+          <img src={QuickDeskPNG} alt="QuickDesk Logo" className='w-70 h-20 sm:h-auto sm:w-130 mt-5'/>
         </div>
 
-          <span
+        <div className='flex flex-row items-center justify-center mt-10 sm:mt-0 sm:px-5'>
+          <p 
           className="
             mt-10
             max-w-3xl
-            text-sm
+            text-xl
             sm:text-2xl
             text-center
             text-gray-700
             leading-relaxed
-            block
+            p-2
+            sm:p-0
+          
           "
         >
           Development of a web-based service management platform designed to optimize
           support processes — featuring a self-service portal, automated ticketing, and
           real-time dashboards.
-        </span>
+        </p>
+
+
+      
+          
+        </div>
+         
 
         <div className='flex flex-row  items-center justify-center space-x-10 mt-10'>
           <Link
