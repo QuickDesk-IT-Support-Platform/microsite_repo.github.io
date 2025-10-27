@@ -1,7 +1,9 @@
 // JSX-only component — explicit React import not required
 import { useState } from "react";
 import Header from "../Header"
-
+import glpi from "../../assets/glpi.png";
+import servicenow from "../../assets/ServiceNow-Logo.png";
+import logoua from "../../assets/logoUA.webp";
 
 
 export default function Inception() {
@@ -39,7 +41,7 @@ export default function Inception() {
     { name: 'Problem', indent: true, sub: true },
     { name: 'Expected Results', indent: true, sub: true },
     { name: 'High-Level Architecture', indent: true, sub: true },
-    { name: 'State of the Art', isHeader: true },
+    { name: 'Related work ', isHeader: true },
     { name: 'Selected Projects', indent: true },
     { name: 'Market Analysis Overview', indent: true },
   ];
@@ -189,45 +191,159 @@ export default function Inception() {
               </p>
 
         </section>
-        <section id="Expected Results" className={`my-10 p-5 rounded-2xl  shadow-2xl ${activeNav === 'Expected Results' ? 'bg-gray-200' : ''}`}>
-          <h2 className="text-2xl font-bold text-center">Expected Results</h2>
-          <p>This section details the expected results of the project.</p>
-        </section>
-        <section id="High-Level Architecture" className={`my-10 p-5 rounded-2xl  shadow-2xl ${activeNav === 'High-Level Architecture' ? 'bg-gray-200' : ''}`}>
-          <h2 className="text-2xl font-bold text-center">High-Level Architecture</h2>
-          <p>This section presents the high-level architecture of the solution.</p>
-        </section>
-        <section id="State of the Art" className={`my-10 p-5 rounded-2xl  shadow-2xl ${activeNav === 'State of the Art' ? 'bg-gray-200' : ''}`}>
-          <h2 className="text-2xl font-bold text-center">State of the Art</h2>
-          <p>This section reviews the current state of the art related to the project.</p>
-        </section>
+
+
+
+
+        
+
+        <section id="ExpectedResults" className={`my-10 p-5 rounded-2xl shadow-2xl ${activeNav === 'ExpectedResults' ? 'bg-gray-200' : ''}`}>
+              <div className="flex flex-row gap-3 items-center pb-3">
+                <span className="w-2 h-10 rounded-2xl bg-orange-600/80"></span>
+                <h2 className="text-2xl font-extrabold">Expected Results</h2>
+              </div>
+
+              <p className="mb-4 leading-relaxed text-sm md:text-xl font-[Sans-serif] text-justify dark:text-slate-200">
+                By implementing this project, we aim to achieve the following key outcomes:
+              </p>
+
+              <ul className="list-disc space-y-4 ml-10 mb-6 text-sm md:text-xl">
+                <li>
+                  <p className="leading-relaxed">
+                    <span className="font-bold">A Centralized IT Support Platform:</span> QuickDesk will deliver a unified and intuitive web-based platform where organizations can efficiently manage incidents, service requests, and IT assets, eliminating fragmented and manual workflows.
+                  </p>
+                </li>
+
+                <li>
+                  <p className="leading-relaxed">
+                    <span className="font-bold">Automated Ticket Management and Assignment:</span> The system will feature intelligent automation for ticket classification and assignment based on categories, keywords, and priorities — ensuring faster response times and reduced human error.
+                  </p>
+                </li>
+
+                <li>
+                  <p className="leading-relaxed">
+                    <span className="font-bold">Real-Time Dashboards and Analytics:</span> Administrators will gain access to interactive dashboards providing real-time insights into ticket volumes, SLA compliance, technician performance, and user satisfaction, supporting data-driven decision-making.
+                  </p>
+                </li>
+
+                <li>
+                  <p className="leading-relaxed">
+                    <span className="font-bold">Enhanced User Experience for Clients:</span> End-users will benefit from a self-service portal that allows them to create, track, and evaluate their support requests easily, improving transparency and overall satisfaction.
+                  </p>
+                </li>
+
+                <li>
+                  <p className="leading-relaxed">
+                    <span className="font-bold">Efficient Technician Workflows:</span> Organization employees will have personalized dashboards for managing assigned tickets, viewing past resolutions, and collaborating effectively with users and colleagues to accelerate problem-solving.
+                  </p>
+                </li>
+
+                <li>
+                  <p className="leading-relaxed">
+                    <span className="font-bold">Advanced Organization and Role Management:</span> Administrators will be able to manage technicians, permissions, and SLAs within their organizations, ensuring proper access control, accountability, and performance optimization.
+                  </p>
+                </li>
+
+                <li>
+                  <p className="leading-relaxed">
+                    <span className="font-bold">Secure and Scalable Architecture:</span> The platform will ensure data security, proper anonymization of deleted accounts, and scalability to accommodate multiple organizations and thousands of concurrent users.
+                  </p>
+                </li>
+              </ul>
+
+              <p className="leading-relaxed dark:text-slate-200 text-sm md:text-xl">
+                These outcomes ensure that QuickDesk provides a seamless, efficient, and data-driven IT support experience for users, workers, and administrators alike.
+              </p>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
         <section id="Selected Projects" className={`my-10 p-5 rounded-2xl  shadow-2xl ${activeNav === 'Selected Projects' ? 'bg-gray-200' : ''}`}>
           <h2 className="text-2xl font-bold text-center">Selected Projects</h2>
-          <p>This section highlights selected projects relevant to our work.</p>
-        </section>
-        <section id="Market Analysis Overview" className={`my-10 p-5 rounded-2xl  shadow-2xl ${activeNav === 'Market Analysis Overview' ? 'bg-gray-200' : ''}`}>
-          <h2 className="text-2xl font-bold text-center">Market Analysis Overview</h2>
-          <p>This section provides an overview of the market analysis conducted.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo autem minus, eligendi delectus modi tenetur non accusamus, sapiente voluptas ratione labore eaque, necessitatibus ea nulla commodi at dolorum optio. Labore?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo autem minus, eligendi delectus modi tenetur non accusamus, sapiente voluptas ratione labore eaque, necessitatibus ea nulla commodi at dolorum optio. Labore?</p>
+          <div className="flex flex-col space-y-4 md:flex-row  justify-evenly mt-10 mb-10">
+            <div className="bg-gray-100 p-4 rounded-lg flex flex-col items-center justify-center hover:shadow-lg hover:scale-105 transition-transform duration-300 hover:cursor-pointer"
+              onClick={() => window.open("https://www.glpi-project.org/en/", "_blank")}
+            >
+              <img src={glpi} alt="GLPI Logo" className="min-w-50 h-24 object-contain mb-2" />
+              <span>GLPI Project</span>
+            </div>
+          
+            <div className="bg-gray-100 p-4 rounded-lg flex flex-col items-center  justify-center hover:shadow-lg hover:scale-105 transition-transform duration-300 hover:cursor-pointer "
+              onClick={() => window.open("https://www.servicenow.com/", "_blank")}
+            >
+                <img src={servicenow} alt="ServiceNow Logo" className="min-w-50 h-20 object-contain mb-2" />
+                <span>ServiceNow Project</span>
+            </div>
 
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo autem minus, eligendi delectus modi tenetur non accusamus, sapiente voluptas ratione labore eaque, necessitatibus ea nulla commodi at dolorum optio. Labore?</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo autem minus, eligendi delectus modi tenetur non accusamus, sapiente voluptas ratione labore eaque, necessitatibus ea nulla commodi at dolorum optio. Labore?</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo autem minus, eligendi delectus modi tenetur non accusamus, sapiente voluptas ratione labore eaque, necessitatibus ea nulla commodi at dolorum optio. Labore?</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo autem minus, eligendi delectus modi tenetur non accusamus, sapiente voluptas ratione labore eaque, necessitatibus ea nulla commodi at dolorum optio. Labore?</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo autem minus, eligendi delectus modi tenetur non accusamus, sapiente voluptas ratione labore eaque, necessitatibus ea nulla commodi at dolorum optio. Labore?</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo autem minus, eligendi delectus modi tenetur non accusamus, sapiente voluptas ratione labore eaque, necessitatibus ea nulla commodi at dolorum optio. Labore?</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo autem minus, eligendi delectus modi tenetur non accusamus, sapiente voluptas ratione labore eaque, necessitatibus ea nulla commodi at dolorum optio. Labore?</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo autem minus, eligendi delectus modi tenetur non accusamus, sapiente voluptas ratione labore eaque, necessitatibus ea nulla commodi at dolorum optio. Labore?</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo autem minus, eligendi delectus modi tenetur non accusamus, sapiente voluptas ratione labore eaque, necessitatibus ea nulla commodi at dolorum optio. Labore?</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo autem minus, eligendi delectus modi tenetur non accusamus, sapiente voluptas ratione labore eaque, necessitatibus ea nulla commodi at dolorum optio. Labore?</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo autem minus, eligendi delectus modi tenetur non accusamus, sapiente voluptas ratione labore eaque, necessitatibus ea nulla commodi at dolorum optio. Labore?</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo autem minus, eligendi delectus modi tenetur non accusamus, sapiente voluptas ratione labore eaque, necessitatibus ea nulla commodi at dolorum optio. Labore?</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo autem minus, eligendi delectus modi tenetur non accusamus, sapiente voluptas ratione labore eaque, necessitatibus ea nulla commodi at dolorum optio. Labore?</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo autem minus, eligendi delectus modi tenetur non accusamus, sapiente voluptas ratione labore eaque, necessitatibus ea nulla commodi at dolorum optio. Labore?</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo autem minus, eligendi delectus modi tenetur non accusamus, sapiente voluptas ratione labore eaque, necessitatibus ea nulla commodi at dolorum optio. Labore?</p>
+
+            <div className="bg-gray-100 p-4 rounded-lg flex flex-col items-center justify-center hover:shadow-lg hover:scale-105 transition-transform duration-300 hover:cursor-pointer"
+            
+              onClick={() => window.open("https://bud-ev.ua.pt/s/suporte", "_blank")}
+              >
+                <img src={logoua} alt="BUD@UA Logo" className="min-w-50 h-24 object-contain mb-2 p-4" />
+                <span>BUD@UA</span>
+            </div>
+
+
+
+          </div>
+       
+
+
+
+
 
         </section>
+        <section id="MarketAnalysis" className={`my-10 p-5 rounded-2xl shadow-2xl ${activeNav === 'MarketAnalysis' ? 'bg-gray-200' : ''}`}>
+          <div className="flex flex-row gap-3 items-center pb-3">
+            <span className="w-2 h-10 rounded-2xl bg-orange-600/80"></span>
+            <h2 className="text-2xl font-extrabold">Market Analysis Overview</h2>
+          </div>
+
+          <p className="mb-4 leading-relaxed text-sm md:text-xl font-[Sans-serif] text-justify dark:text-slate-200">
+              These are the projects that inspired the development of our project
+          </p>
+
+          <ul className="list-disc space-y-4 ml-10 mb-6 text-sm md:text-xl">
+            <li>
+              <p className="leading-relaxed">
+                <span className="font-bold">ServiceNow:</span> Enterprise-grade ITSM platform offering powerful automation, AI-driven search, and real-time dashboards for large-scale organizations. However, it may be complex for smaller teams and less intuitive to use.
+              </p>
+            </li>
+
+            <li>
+              <p className="leading-relaxed">
+                <span className="font-bold">GLPI:</span> Open-source solution for IT asset management and helpdesk, providing solid ticket tracking but limited automation, AI integration, and dashboard functionality.
+              </p>
+            </li>
+
+            <li>
+              <p className="leading-relaxed">
+                <span className="font-bold">BUD@UA:</span> Academic support platform mainly focused on internal request handling. It provides basic ticket management but lacks real-time metrics and AI-based capabilities.
+              </p>
+            </li>
+
+    
+          </ul>
+
+          <p className="leading-relaxed dark:text-slate-200 text-sm md:text-xl">
+            A detailed feature comparison — including ticket management, chat integration, real-time dashboards, AI capabilities, and usability — is summarized in the Related Work table above and further discussed in the <a className="font-bold hover:underline hover:cursor-pointer"
+            onClick={()=>alert("In Progress")}
+            >Elaboration phase</a>.
+          </p>
+        </section>
+
       </div>
     </div>
 
