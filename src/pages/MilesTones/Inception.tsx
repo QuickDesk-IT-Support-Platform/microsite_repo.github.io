@@ -101,7 +101,7 @@ export default function Inception() {
         <section id="Project Overview" className="my-10 p-5 text-center">
           <div className={`shadow-2xl rounded-2xl p-5 bg-gray-200`}>
              <h2 className="text-2xl md:text-3xl mb-2 font-bold">Project Overview</h2>
-            <p className="text-sm md:text-xl">Developing a web platform to optimize IT support services through self-service, ticket automation, and real-time dashboards.</p>
+            <p className="text-sm md:text-xl">A technical support system that allows users to request help, track the status of their requests, and enables support teams to manage, prioritize, and resolve those requests quickly and efficiently.</p>
           </div>
           
         </section>
