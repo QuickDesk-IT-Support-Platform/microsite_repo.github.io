@@ -40,7 +40,6 @@ export default function Inception() {
     { name: 'Context', indent: true, sub: true },
     { name: 'Problem', indent: true, sub: true },
     { name: 'Expected Results', indent: true, sub: true },
-    { name: 'High-Level Architecture', indent: true, sub: true },
     { name: 'Related work ', isHeader: true },
     { name: 'Selected Projects', indent: true },
     { name: 'Market Analysis Overview', indent: true },
@@ -197,7 +196,7 @@ export default function Inception() {
 
         
 
-        <section id="ExpectedResults" className={`my-10 p-5 rounded-2xl shadow-2xl ${activeNav === 'ExpectedResults' ? 'bg-gray-200' : ''}`}>
+        <section id="Expected Results" className={`my-10 p-5 rounded-2xl shadow-2xl ${activeNav === 'Expected Results' ? 'bg-gray-200' : ''}`}>
               <div className="flex flex-row gap-3 items-center pb-3">
                 <span className="w-2 h-10 rounded-2xl bg-orange-600/80"></span>
                 <h2 className="text-2xl font-extrabold">Expected Results</h2>
@@ -305,7 +304,7 @@ export default function Inception() {
 
 
         </section>
-        <section id="MarketAnalysis" className={`my-10 p-5 rounded-2xl shadow-2xl ${activeNav === 'MarketAnalysis' ? 'bg-gray-200' : ''}`}>
+        <section id="Market Analysis Overview" className={`my-10 p-5 rounded-2xl shadow-2xl ${activeNav === 'Market Analysis Overview' ? 'bg-gray-200' : ''}`}>
           <div className="flex flex-row gap-3 items-center pb-3">
             <span className="w-2 h-10 rounded-2xl bg-orange-600/80"></span>
             <h2 className="text-2xl font-extrabold">Market Analysis Overview</h2>
