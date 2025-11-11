@@ -21,7 +21,7 @@
 
       title:"System Architecture ",
       description: "Document that outlines the overall system architecture of the QuickDesk-IT platform",
-      link: "https://app.diagrams.net/#G1d_i9kkfodf59BMB0B-4O6N8jaP_wTCIU#%7B%22pageId%22%3A%22UNiyZUibPOel2K6aCp1S%22%7D",
+      link: "https://uapt33090-my.sharepoint.com/:b:/g/personal/agm_ua_pt/EXqwAQog83pKl92Mm_4RpJsBEHWQdTObwEel9QSsyFZcAw?e=1kEG2h",
       docType: "Manual",
       date: "13-10-2025",
       status: "Em Andamento"
@@ -57,18 +57,26 @@
 
    */
 
-    /*
+    
     ,
       {
 
-      title:"Database Diagram ",
-      description: "Diagrama que ilustra a estrutura do banco de dados.",
-      link: "https://drive.google.com/file/d/1uXe57AFQDdYNpmRPugiijl3ZJ9kISfKk/view?usp=sharing",
+      title:"Relational Database Diagram ",
+      description: "Diagrama que ilustra a estrutura do banco de dados do sistema QuickDesk-IT",
+      link: "https://uapt33090-my.sharepoint.com/:i:/g/personal/agm_ua_pt/ESG3TLDc-CpPumDYJGUy9GwBHUO_VV2t47l-eEDTcTKx7A?e=s8m7uR",
       docType: "Manual",
       date: "14-10-2025",
       status: "Em Andamento"
     }
-    */
+    ,{
+      title:"Non-Relational Database Diagram ",
+      description: "Diagrama que ilustra a estrutura do banco de dados NoSQL do sistema QuickDesk-IT",
+      link: "https://uapt33090-my.sharepoint.com/:i:/g/personal/agm_ua_pt/Ebyy0TP3MLdPn-UI1jIzQPEBBXwJA735xtMWt29FYhZo6w?e=wpMr7p",
+      docType: "Manual",
+      date: "14-10-2025",
+      status: "Em Andamento"
+
+    }
 
   ];
   export default docs;
