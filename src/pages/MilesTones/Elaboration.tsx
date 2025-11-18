@@ -1,9 +1,6 @@
 // JSX-only component — explicit React import not required
 import { useState } from "react";
-import Header from "../Header"
-import glpi from "../../assets/glpi.png";
-import servicenow from "../../assets/ServiceNow-Logo.png";
-import logoua from "../../assets/logoUA.webp";
+import Header from "../Header";
 import state_of_art_ticket from "../../assets/state_of_art_ticket.png";
 import state_of_art_ai from "../../assets/state_of_art_ai.png";
 import state_of_art_ux from "../../assets/state_of_art_ux.png";
@@ -227,9 +224,9 @@ export default function Elaboration() {
                <span className={`w-2   h-10 rounded-2xl bg-orange-600/80`}></span>
               <h2 className="text-2xl font-extrabold ">Use Cases</h2>
             </div>
+            <span className="text-sm md:text-xl leading-relaxed mb-4">Here is some of the use cases for our mvp</span>
 
-            <div className="flex flex-col ">
-              <span className="text-sm md:text-xl leading-relaxed mb-4">Here is some of the use cases for our mvp</span>
+            <div className="flex flex-col items-center ">
               
               <h1 className="text-xl font-bold">End User(Core)</h1>
               <div className="flex item-start justify-start mb-10 mt-10">
@@ -270,13 +267,13 @@ export default function Elaboration() {
             <div className="flex flex-col ">
               
               <h1 className="text-xl font-bold">System Architecture</h1>
-              <div className="flex item-start justify-start mb-10 mt-5">
+              <div className="flex item-center justify-center mb-10 mt-5">
                   <img src={system_architecture} alt="State of the Art Ticket Management" className="w-150 h-150" />  
               </div>
 
               <h1 className="text-xl font-bold">Container-level Diagram</h1>
-              <div className="flex item-start justify-start mb-10 mt-5">
-                  <img src={container_architecture} alt="State of the Art Ticket Management" className="w-full h-auto" />  
+              <div className="flex item-center justify-center mb-10 mt-5">
+                  <img src={container_architecture} alt="State of the Art Ticket Management" className="scale-70" />  
               </div>
             </div>
 
