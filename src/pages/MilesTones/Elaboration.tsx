@@ -85,7 +85,7 @@ export default function Elaboration() {
       </div>
   {/* main content */}
   <div id="inception-main" className="w-full md:w-8/8 p-4 md:p-20 bg-white md:h-[calc(100vh-4rem)] overflow-y-auto">
-        <h1 className="font-bold text-4xl text-center md:text-start">M1 - Elaboration</h1>        
+        <h1 className="font-bold text-4xl text-center md:text-start">M2 - Elaboration</h1>        
         <div className="mt-10 justify-center flex flex-col items-center space-y-6">
         
         <div className="w-full max-w-5xl aspect-video overflow-hidden rounded-2xl shadow-lg">
