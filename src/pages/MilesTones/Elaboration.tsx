@@ -42,7 +42,7 @@ export default function Elaboration() {
   };
   const [activeNav, setActiveNav] = useState('State of the Art');
     const navItems = [
-    { name: 'M1 - Elaboration', isHeader: true },
+    { name: 'M2 - Elaboration', isHeader: true },
     { name: 'State of the Art', indent: true },
     { name: 'Ticket Management', indent: true, sub: true,subSub: true },
     { name: 'User Support', indent: true, sub: true,subSub: true },

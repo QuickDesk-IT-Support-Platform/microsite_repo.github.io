@@ -4,16 +4,18 @@ import Header from "../Header"
 import glpi from "../../assets/glpi.png";
 import servicenow from "../../assets/ServiceNow-Logo.png";
 import logoua from "../../assets/logoUA.webp";
-
+import { useNavigate } from "react-router-dom";
 
 export default function Inception() {
+  const navigate = useNavigate();
+  
   const handleScrollTo = (id: string, name: string) => {
     setActiveNav(name);
     if (id === "M1 - Inception") {
       return;
     }
     const element = document.getElementById(id);
-    if (!element) return;
+    if (!element) return; 
 
     // Try to scroll the local main container if it exists (we made it scrollable)
     const container = document.getElementById('inception-main');
@@ -338,7 +340,7 @@ export default function Inception() {
 
           <p className="leading-relaxed dark:text-slate-200 text-sm md:text-xl">
             A detailed feature comparison — including ticket management, chat integration, real-time dashboards, AI capabilities, and usability — is summarized in the Related Work table above and further discussed in the <a className="font-bold hover:underline hover:cursor-pointer"
-            onClick={()=>alert("In Progress")}
+            onClick={()=>navigate("/milesTones/elaboration")}
             >Elaboration phase</a>.
           </p>
         </section>
