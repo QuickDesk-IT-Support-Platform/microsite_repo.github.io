@@ -24,11 +24,11 @@
       ]
     },
 
-        /*
+        
 
     {
       name: 'M2-Elaboration',
-      dateRange: '04/03 - 11/03',
+      dateRange: '11/11 - 18/11',
       color: 'bg-emerald-500',
       tasks: [
         'Presentation (Everyone)',
@@ -37,18 +37,16 @@
       ]
     },
     {
-      name: 'Development Phase',
-      dateRange: '12/03 - 07/04',
-      color: 'bg-orange-500',
+      name: '',
+      dateRange: '11/03 - 9/12',
+      color: '',
       tasks: [
         'Core: Database models',
         'Core: API endpoints',
         'Core: Frontend',
-        'Core: Plugins registration',
-        'MVP Modules'
       ]
     }
 
-    */
+    
   ];
   export default milestones;

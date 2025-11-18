@@ -10,6 +10,9 @@ import support_staff_use_case from "../../assets/suport_staff.png";
 import org_admin_use_case from "../../assets/org_admin.png";
 import system_architecture from "../../assets/system_arc.png";
 import container_architecture from "../../assets/container_arc.png";
+import quickdesck_admin_use_case from "../../assets/quickdesck_admin.png";
+import relational from "../../assets/relational.png";
+import non_relational from "../../assets/non_relational.png";
 export default function Elaboration() {
   const handleScrollTo = (id: string, name: string) => {
     setActiveNav(name);
@@ -141,7 +144,7 @@ export default function Elaboration() {
             <section id="Automation and AI Integration" className={`my-6 ${activeNav === 'Automation and AI Integration' ? 'bg-gray-200 p-5 rounded-xl' : ''}`}>
               <h3 className="text-xl font-bold mb-5 mt-5">Automation and AI Integration</h3>
               <div className="flex item-start justify-start mb-10 rounded-lg overflow-hidden shadow-2xl">
-                  <img src={state_of_art_ai} alt="State of the Art Ticket Management" className="w-full h-auto" />  
+                  <img src={state_of_art_ai} alt="Automation and AI Integration" className="w-full h-auto" />  
               </div>
               <ul className="list-disc space-y-2 ml-6 text-sm md:text-xl">
                 <li>AI-powered ticket classification</li>
@@ -155,7 +158,7 @@ export default function Elaboration() {
             <section id="Usability and UX/UI" className={`my-6 ${activeNav === 'Usability and UX/UI' ? 'bg-gray-200 p-5 rounded-xl' : ''}`}>
               <h3 className="text-xl font-bold mb-5 mt-5">Usability and UX/UI</h3>
               <div className="flex item-start justify-start mb-10 rounded-lg overflow-hidden shadow-lg">
-                  <img src={state_of_art_ux} alt="State of the Art Ticket Management" className="w-full h-auto" />  
+                  <img src={state_of_art_ux} alt="Usability and UX/UI" className="w-full h-auto" />  
               </div>
               <ul className="list-disc space-y-2 ml-6 text-sm md:text-xl">
                 <li>Intuitive and user-friendly interface design</li>
@@ -230,25 +233,25 @@ export default function Elaboration() {
               
               <h1 className="text-xl font-bold">End User(Core)</h1>
               <div className="flex item-start justify-start mb-10 mt-10">
-                  <img src={end_user_use_case} alt="State of the Art Ticket Management" className="w-150 h-150" />  
+                  <img src={end_user_use_case} alt="End User(Core)" className=" md:scale-80" />  
               </div>
 
               <h1 className="text-xl font-bold">Support Staff</h1>
               <div className="flex item-start justify-start mb-10 mt-10">
-                  <img src={support_staff_use_case} alt="State of the Art Ticket Management" className="w-150 h-150" />  
+                  <img src={support_staff_use_case} alt="Support Staff" className="scale-100  md:scale-80" />  
               </div>
 
 
              
               <h1 className="text-xl font-bold">Organization Administrator</h1>
               <div className="flex item-start justify-start mb-10 mt-10">
-                  <img src={org_admin_use_case} alt="State of the Art Ticket Management" className="w-150 h-150" />  
+                  <img src={org_admin_use_case} alt="Organization Administrator" className="scale-100 md:scale-80" />  
               </div>
 
 
             <h1 className="text-xl font-bold">QuickDesk Administrator</h1>
               <div className="flex item-start justify-start mb-10 mt-10">
-                  {/* <img src={org_admin_use_case} alt="State of the Art Ticket Management" className="w-150 h-150" />   */}
+                  <img src={quickdesck_admin_use_case} alt="QuickDesk Administrator" className="scale-100" />  
               </div>
             </div>
 
@@ -268,13 +271,47 @@ export default function Elaboration() {
               
               <h1 className="text-xl font-bold">System Architecture</h1>
               <div className="flex item-center justify-center mb-10 mt-5">
-                  <img src={system_architecture} alt="State of the Art Ticket Management" className="w-150 h-150" />  
+                  <img src={system_architecture} alt="System Architecture" className="w-150 h-150" />  
               </div>
 
               <h1 className="text-xl font-bold">Container-level Diagram</h1>
               <div className="flex item-center justify-center mb-10 mt-5">
-                  <img src={container_architecture} alt="State of the Art Ticket Management" className="scale-70" />  
+                  <img src={container_architecture} alt="Container-level Diagram" className="scale-100 md:scale-70" />  
               </div>
+
+
+              <h1 className="text-xl font-bold">Domain Model </h1>
+              <div className="flex flex-col md:flex-row p-5  gap-10">
+                <div className="flex flex-col">
+                  <h1 className="text-md font-bold">Relational Database</h1>
+                  <img src={relational} alt="Relational Database" className="scale-100" />  
+                </div>
+
+
+                
+                <div className="flex flex-col">
+                  <h1 className="text-md font-bold">Non Relational Database</h1>
+                  <img src={non_relational} alt="Non Relational Database" className="scale-100" />
+                </div>
+
+              </div>
+
+              {/* <div className="flex flex-row items-center justify-center mb-10 mt-5">
+                  <div className="flex flex-col item-center justify-center mb-10 mt-5">
+                    <h1 className="text-xl font-bold">Relational Database</h1>
+                    <img src={relational} alt="State of the Art Ticket Management" className="scale-70" />  
+                  </div>
+
+                <div className="flex flex-col item-center justify-center mb-10 mt-5">
+                  <h1 className="text-xl font-bold">Non Relational Database</h1>
+                  <img src={non_relational} alt="State of the Art Ticket Management" className="scale-70" />  
+                </div>
+
+
+              </div> */}
+            
+
+              
             </div>
 
         </section>
