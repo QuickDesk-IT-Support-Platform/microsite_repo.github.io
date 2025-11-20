@@ -341,7 +341,7 @@ export default function Inception() {
           <p className="leading-relaxed dark:text-slate-200 text-sm md:text-xl">
             A detailed feature comparison — including ticket management, chat integration, real-time dashboards, AI capabilities, and usability — is summarized in the Related Work table above and further discussed in the <a className="font-bold hover:underline hover:cursor-pointer"
             onClick={()=>navigate("/milesTones/elaboration")}
-            >Elaboration phase</a>.
+            >Elaboration phase.</a>
           </p>
         </section>
 
