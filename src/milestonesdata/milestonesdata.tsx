@@ -38,12 +38,29 @@
     },
     {
       name: '',
-      dateRange: '11/03 - 9/12',
       color: '',
       tasks: [
         'Core: Database models',
         'Core: API endpoints',
         'Core: Frontend',
+      ]
+    },
+     {
+      name: 'M3-Construction',
+      dateRange: '25/11 - 16/12',
+      color: 'bg-blue-500',
+      tasks: [
+        'Prepare Presentation',
+        'Stabilize MVP',
+        'Manual Tests'
+      ]
+    },
+    {
+      name: '',
+      color: '',
+      tasks: [
+        'Refine features',
+      
       ]
     }
 
