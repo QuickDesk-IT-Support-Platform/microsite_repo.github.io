@@ -255,21 +255,8 @@ export default function Inception() {
               <p className="leading-relaxed dark:text-slate-200 text-sm md:text-xl">
                 These outcomes ensure that QuickDesk provides a seamless, efficient, and data-driven IT support experience for users, workers, and administrators alike.
               </p>
-      </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-       
+          </section>
+          
         <section id="Selected Projects" className={`my-10 p-5 rounded-2xl  shadow-2xl ${activeNav === 'Selected Projects' ? 'bg-gray-200' : ''}`}>
           <h2 className="text-2xl font-bold text-center">Selected Projects</h2>
           <div className="flex flex-col space-y-4 md:flex-row  justify-evenly mt-10 mb-10">
@@ -347,34 +334,6 @@ export default function Inception() {
 
       </div>
     </div>
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     </div>
    
