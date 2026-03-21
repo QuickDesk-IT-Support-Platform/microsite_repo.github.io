@@ -22,7 +22,7 @@ export default function Usability() {
             
             <div className="w-full max-w-5xl aspect-video overflow-hidden rounded-2xl shadow-lg">
                 <iframe
-                  src="https://www.canva.com/design/DAHDjaVxZrQ/rcp1H1SCP-t08pufnkHUmQ/edit"
+                  src="https://www.canva.com/design/DAHDjaVxZrQ/rcp1H1SCP-t08pufnkHUmQ/edit?embed"
                   allowFullScreen
                   loading="lazy"
                   className="w-full h-full border-0"
