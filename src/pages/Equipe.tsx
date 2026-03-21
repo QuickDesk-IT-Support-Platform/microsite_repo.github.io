@@ -14,22 +14,22 @@ const mockedTeamMembers = [
     },
     {
         name: "Diogo Oliveira",
-        role: "BackEnd Engineer",
+        role: "UI/UX & FrontEnd Engineer",
         imageUrl: Diogo
     },
     {
         name: "Bruno Charao",
-        role: "FullStack and QA Analyst",
+        role: "UI/UX & FrontEnd Engineer",
         imageUrl: Bruno
     },
     {
         name: "João Ferreira",
-        role: "BackEnd Engineer",
+        role: "BackEnd Engineer & Architecture Engineer",
         imageUrl: Joao
     },
     {
         name: "Nuno Vieira",
-        role: "BackEnd and Architect Engineer ",
+        role: "FrontEnd Engineer and Architect Engineer ",
         imageUrl: Nuno
     },
     {
