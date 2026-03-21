@@ -4,7 +4,7 @@ const MILESTONES = [
   { id: 'm1', title: 'M1-Inception' , path: '/milestones/inception' },
   { id: 'm2', title: 'M2-Elaboration', path: '/milestones/elaboration' },
   { id: 'm3', title: 'M3-Construction', path: '/milestones/construction' },
-  // { id: 'm4', title: 'M4-Transition', path: '/milestones/transition' },
+  { id: 'm4', title: 'M1-Digital Accessibility and Usability ', path: '/milestones/digital-accessibility-and-usability' },
 ]
 
 export default function DropDownMilestones() {

@@ -56,14 +56,14 @@
       ]
     },
     {
-      name: '',
-      color: '',
+      name: 'M1-Digital Accessibility and Usability',
+      dateRange: '03/03 - 17/03',
+      color: 'bg-orange-500',
       tasks: [
-        'Refine features',
-      
+        'Prepare Presentation',
+        'Usability tests',
+        'Acessibility/Usability improvements'
       ]
     }
-
-    
   ];
   export default milestones;
