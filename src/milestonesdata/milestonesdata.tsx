@@ -65,5 +65,16 @@
         'Acessibility/Usability improvements'
       ]
     }
+    {
+      name: 'M2-Prototype',
+      dateRange: '17/03 - 31/03',
+      color: 'bg-red-500',
+      tasks: [
+        'Prepare Presentation',
+        'Automatic Ticket Assignment',
+        'Technician Profiles',
+        'Full app responsive design',
+      ]
+    }
   ];
   export default milestones;
