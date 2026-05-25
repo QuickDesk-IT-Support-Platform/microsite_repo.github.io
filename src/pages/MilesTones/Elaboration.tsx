@@ -13,6 +13,7 @@ import container_architecture from "../../assets/container_arc.png";
 import quickdesck_admin_use_case from "../../assets/quickdesck_admin.png";
 import relational from "../../assets/relational.png";
 import non_relational from "../../assets/non_relational.png";
+
 export default function Elaboration() {
   const handleScrollTo = (id: string, name: string) => {
     setActiveNav(name);
