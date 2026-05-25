@@ -71,9 +71,20 @@
       color: 'bg-red-500',
       tasks: [
         'Prepare Presentation',
-        'Automatic Ticket Assignmentttttttttttt',
+        'Automatic Ticket Assignment',
         'Technician Profiles',
         'Full app responsive design',
+      ]
+    },
+    {
+      name: 'M3-Legal Requirements',
+      dateRange: '31/03 - 05/05',
+      color: 'bg-purple-500',
+      tasks: [
+        'Legal requirements',
+        'Technical risks',
+        'Business plan',
+        'Strategic analysis',
       ]
     }
   ];
