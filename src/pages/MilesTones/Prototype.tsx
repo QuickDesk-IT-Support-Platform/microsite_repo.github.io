@@ -141,7 +141,7 @@ export default function Prototype() {
           <div className="mt-10 justify-center flex flex-col items-center space-y-6">
             <div className="w-full max-w-5xl aspect-video overflow-hidden rounded-2xl shadow-lg">
               <iframe
-                src="https://www.canva.com/design/DAHEl4z4yug/_6jqe-w8yFbBaYdFafyBow/view?utm_content=DAHEl4z4yug&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3188d4f48c"
+                src="https://www.canva.com/design/DAHEl4z4yug/_6jqe-w8yFbBaYdFafyBow/view?embed"
                 allowFullScreen
                 loading="lazy"
                 className="w-full h-full border-0"
