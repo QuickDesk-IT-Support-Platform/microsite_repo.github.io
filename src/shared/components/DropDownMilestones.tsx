@@ -7,6 +7,7 @@ const MILESTONES = [
   { id: 'm4', title: 'M1-Digital Accessibility and Usability ', path: '/milestones/usability' },
   { id: 'm5', title: 'M2-Prototype', path: '/milestones/prototype' },
   { id: 'm6', title: 'M3-Legal Requirements', path: '/milestones/legal-requirements' },
+  { id: 'm7', title: 'M4-System Component Validation', path: '/milestones/system-component-validation' },
 ]
 
 export default function DropDownMilestones() {
@@ -36,7 +37,7 @@ export default function DropDownMilestones() {
       </button>
 
       {open && (
-        <div className="absolute right-0 mt-2 w-56 rounded-lg bg-orange-600 text-white shadow-lg overflow-hidden z-20">
+        <div className="absolute right-0 mt-2 w-72 rounded-lg bg-orange-600 text-white shadow-lg overflow-hidden z-20">
           <ul className="py-2">
             {MILESTONES.map((m) => (
               <li

@@ -14,6 +14,7 @@ import Usability from './pages/MilesTones/Usability.tsx';
 import Inception from './pages/MilesTones/Inception.tsx';
 import Prototype from './pages/MilesTones/Prototype.tsx';
 import LegalRequirements from './pages/MilesTones/LegalRequirements.tsx';
+import SystemComponentValidation from './pages/MilesTones/SystemComponentValidation.tsx';
 import NotFound from './pages/NotFound';
 import Elaboration from './pages/MilesTones/Elaboration.tsx';
 // import { Construction } from 'lucide-react';
@@ -33,6 +34,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/milestones/usability" element={<Usability />} />
         <Route path="/milestones/prototype" element={<Prototype />} />
         <Route path="/milestones/legal-requirements" element={<LegalRequirements />} />
+        <Route path="/milestones/system-component-validation" element={<SystemComponentValidation />} />
         <Route path="/milestones/inception" element={<Inception />} />
         {/* 404 - Not Found route (catch-all) */}
         <Route path="*" element={<NotFound />} />

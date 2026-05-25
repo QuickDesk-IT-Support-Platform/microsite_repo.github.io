@@ -86,6 +86,18 @@
         'Business plan',
         'Strategic analysis',
       ]
+    },
+    {
+      name: 'M4-System Component Validation',
+      dateRange: '05/05 - 19/05',
+      color: 'bg-cyan-500',
+      tasks: [
+        'Performance validation',
+        'Scalability testing',
+        'Security validation',
+        'Business rule analysis',
+        'Project management review',
+      ]
     }
   ];
   export default milestones;
