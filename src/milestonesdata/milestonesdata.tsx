@@ -64,7 +64,7 @@
         'Usability tests',
         'Acessibility/Usability improvements'
       ]
-    }
+    },
     {
       name: 'M2-Prototype',
       dateRange: '17/03 - 31/03',
