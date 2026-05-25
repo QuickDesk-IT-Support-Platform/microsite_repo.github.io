@@ -46,23 +46,6 @@ export default function Usability() {
             </div>
 
           </section>
-          
-      <section id="Demo" className="my-10 p-5 rounded-2xl shadow-2xl flex flex-col items-center justify-center">
-        <div className="flex flex-row gap-3 self-start pb-3">
-          <span className="w-2 h-10 rounded-2xl bg-orange-600/80"></span>
-          <h2 className="text-2xl font-extrabold">APP CURRENT STATE</h2>
-        </div>
-        <div className="w-full max-w-5xl aspect-video overflow-hidden rounded-2xl shadow-lg ">
-          <iframe
-            src="https://drive.google.com/file/d/1GhVGcEgLZTNNQVK5O8-EEqbuPyX4aLNV/preview"
-            className="w-full h-full"
-            allow="autoplay"
-            allowFullScreen
-          ></iframe>
-        </div>
-      </section>
-
-
       </div>
     </div>
     
