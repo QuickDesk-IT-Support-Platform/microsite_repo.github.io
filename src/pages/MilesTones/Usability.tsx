@@ -13,7 +13,7 @@ export default function Usability() {
     <div className="flex pt-18 w-full">
   
   {/* main content */}
-    <div id="M3 - Usability and Digital Accessibility" className="w-full md:w-8/8 p-4 md:p-20 bg-white md:h-[calc(100vh-4rem)] overflow-y-auto">
+    <div id="M1 - Usability and Digital Accessibility" className="w-full md:w-8/8 p-4 md:p-20 bg-white md:h-[calc(100vh-4rem)] overflow-y-auto">
         
           
         <h1 className="font-bold text-4xl text-center md:text-start">M3 - Usability and Digital Accessibility</h1>        
@@ -22,7 +22,7 @@ export default function Usability() {
             
             <div className="w-full max-w-5xl aspect-video overflow-hidden rounded-2xl shadow-lg">
                 <iframe
-                  src="https://www.canva.com/design/DAHDjaVxZrQ/rcp1H1SCP-t08pufnkHUmQ/edit?embed"
+                  src="https://www.canva.com/design/DAHDjaVxZrQ/eX4e639yc6nNOekIr4Cimg/view?utm_content=DAHDjaVxZrQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h37add568c9"
                   allowFullScreen
                   loading="lazy"
                   className="w-full h-full border-0"
