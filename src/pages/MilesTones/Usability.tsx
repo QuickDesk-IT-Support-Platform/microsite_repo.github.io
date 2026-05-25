@@ -16,7 +16,7 @@ export default function Usability() {
     <div id="M1 - Usability and Digital Accessibility" className="w-full md:w-8/8 p-4 md:p-20 bg-white md:h-[calc(100vh-4rem)] overflow-y-auto">
         
           
-        <h1 className="font-bold text-4xl text-center md:text-start">M3 - Usability and Digital Accessibility</h1>        
+        <h1 className="font-bold text-4xl text-center md:text-start">M1 - Usability and Digital Accessibility</h1>        
         
         <div className="mt-10 justify-center flex flex-col items-center space-y-6">
             
