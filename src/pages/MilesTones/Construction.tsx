@@ -7,14 +7,14 @@ import { useState } from "react";
 export default function Construction() {
   const handleScrollTo = (id: string, name: string) => {
     setActiveNav(name);
-    if (id === "M1 - Elaboration") {
+    if (id === "M3 - Construction") {
       return;
     }
     const element = document.getElementById(id);
     if (!element) return;
 
     // Try to scroll the local main container if it exists (we made it scrollable)
-    const container = document.getElementById('inception-main');
+    const container = document.getElementById('M3 - Construction');
     const header = document.getElementById('site-header');
     const headerHeight = header ? header.offsetHeight : 0;
 
@@ -31,7 +31,7 @@ export default function Construction() {
     const y = element.getBoundingClientRect().top + window.scrollY - headerHeight - 8;
     window.scrollTo({ top: y, behavior: 'smooth' });
   };
-  const [activeNav, setActiveNav] = useState('Project Overview');
+  const [activeNav, setActiveNav] = useState('Updated Architecture');
       const navItems = [
       { name: 'M3 - Construction', isHeader: true },
       { name: 'Updated Architecture', indent: true },
