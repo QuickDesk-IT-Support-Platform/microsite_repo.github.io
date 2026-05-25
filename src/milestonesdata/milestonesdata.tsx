@@ -71,7 +71,7 @@
       color: 'bg-red-500',
       tasks: [
         'Prepare Presentation',
-        'Automatic Ticket Assignment',
+        'Automatic Ticket Assignmentttttttttttt',
         'Technician Profiles',
         'Full app responsive design',
       ]
