@@ -18,7 +18,7 @@ import Elaboration from './pages/MilesTones/Elaboration.tsx';
 // import { Construction } from 'lucide-react';
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <HashRouter basename='/microsite_repo.github.io'>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/Milestones" element={<Milestones />} />
