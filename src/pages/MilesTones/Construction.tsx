@@ -35,7 +35,7 @@ export default function Construction() {
       const navItems = [
       { name: 'M3 - Construction', isHeader: true },
       { name: 'Updated Architecture', indent: true },
-      { name: 'MVP DEMO', indent: true, sub: true }
+      { name: 'MVP DEMO', indent: true }
     ];
 
   return (
