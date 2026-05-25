@@ -2,6 +2,7 @@
 import Header from "../Header";
 
 import container_architecture from "../../assets/updated_container_diagram.png";
+import { useState } from "react";
 
 const stateOfArtRows = [
   {
@@ -122,11 +123,77 @@ const CheckCell = ({ enabled }: { enabled: boolean }) => (
 );
 
 export default function Prototype() {
+  const handleScrollTo = (id: string, name: string) => {
+      setActiveNav(name);
+      if (id === "M2 - Prototype") {
+        return;
+      }
+      const element = document.getElementById(id);
+      if (!element) return; 
+  
+      // Try to scroll the local main container if it exists (we made it scrollable)
+      const container = document.getElementById('M2 - Prototype');
+      const header = document.getElementById('site-header');
+      const headerHeight = header ? header.offsetHeight : 0;
+  
+      if (container) {
+        // compute element position relative to container and scroll container
+        const elementRect = element.getBoundingClientRect();
+        const containerRect = container.getBoundingClientRect();
+        const offset = elementRect.top - containerRect.top + container.scrollTop - headerHeight - 8;
+        container.scrollTo({ top: offset, behavior: 'smooth' });
+        return;
+      }
+  
+      // fallback to window scrolling
+      const y = element.getBoundingClientRect().top + window.scrollY - headerHeight - 8;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+  };
+  const [activeNav, setActiveNav] = useState('Project Overview');
+      const navItems = [
+      { name: 'M2 - Prototype', isHeader: true },
+      { name: 'Project Context', indent: true },
+      { name: 'State of the Art', indent: true },
+      { name: 'Application Features', indent: true },
+      { name: 'Technical Features', indent: true },
+      { name: 'Actors / Personas', indent: true },
+      { name: 'User Stories', indent: true },
+      { name: 'Updated Architecture', indent: true },
+  ];
+
   return (
     <div className="flex min-h-screen">
       <Header />
 
       <div className="flex pt-18 w-full">
+        {/* leftbar */}
+        <div className="hidden md:flex md:flex-col md:w-2/8 md:bg-gray-200 p-4 md:border-t-2 md:border-gray-300 md:sticky md:top-16">
+                {navItems.map((item, idx) => (
+              <div key={idx}>
+                {item.isHeader ? (
+                  <h2 className="text-orange-600 text-xl font-bold uppercase tracking-wider mt-6 mb-3 px-3">
+                    {item.name}
+                  </h2>
+                ) : (
+                  <div
+                    onClick={() => handleScrollTo(item.name,item.name)}
+                    className={`
+                      px-4 py-3 mb-1 rounded-xl cursor-pointer transition-all duration-300
+                      ${activeNav === item.name 
+                        ? 'bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-lg shadow-orange-500/30 transform scale-105' 
+                        : 'text-gray-600 hover:bg-orange-50 hover:text-orange-600 hover:translate-x-1'
+                      }
+                    `}
+                  >
+                    <div className="flex items-center justify-between">
+                      <span className="font-medium text-sm">{item.name}</span>
+                    </div>
+                  </div>
+                )}
+              </div>
+            ))}
+
+        </div>
         <div
           id="M2 - Prototype"
           className="w-full md:w-8/8 p-4 md:p-20 bg-white md:h-[calc(100vh-4rem)] overflow-y-auto"
@@ -149,7 +216,7 @@ export default function Prototype() {
             </div>
           </div>
 
-          <section className="my-10 p-5 rounded-2xl shadow-2xl">
+          <section id="Project Context" className="my-10 p-5 rounded-2xl shadow-2xl">
             <div className="flex flex-row gap-3 items-center pb-3">
               <span className="w-2 h-10 rounded-2xl bg-orange-600/80"></span>
               <h2 className="text-2xl font-extrabold">Project Context</h2>
@@ -168,7 +235,7 @@ export default function Prototype() {
             </p>
           </section>
 
-          <section className="my-10 p-5 rounded-2xl shadow-2xl">
+          <section id="State of the Art" className="my-10 p-5 rounded-2xl shadow-2xl">
             <div className="flex flex-row gap-3 items-center pb-3">
               <span className="w-2 h-10 rounded-2xl bg-orange-600/80"></span>
               <h2 className="text-2xl font-extrabold">State of the Art</h2>
@@ -207,7 +274,7 @@ export default function Prototype() {
             </div>
           </section>
 
-          <section className="my-10 p-5 rounded-2xl shadow-2xl">
+          <section id="Application Features" className="my-10 p-5 rounded-2xl shadow-2xl">
             <div className="flex flex-row gap-3 items-center pb-3">
               <span className="w-2 h-10 rounded-2xl bg-orange-600/80"></span>
               <h2 className="text-2xl font-extrabold">Application Features</h2>
@@ -221,7 +288,7 @@ export default function Prototype() {
             </ul>
           </section>
 
-          <section className="my-10 p-5 rounded-2xl shadow-2xl">
+          <section id="Technical Features" className="my-10 p-5 rounded-2xl shadow-2xl">
             <div className="flex flex-row gap-3 items-center pb-3">
               <span className="w-2 h-10 rounded-2xl bg-orange-600/80"></span>
               <h2 className="text-2xl font-extrabold">Technical Features</h2>
@@ -235,7 +302,7 @@ export default function Prototype() {
             </ul>
           </section>
 
-          <section className="my-10 p-5 rounded-2xl shadow-2xl">
+          <section id="Actors / Personas" className="my-10 p-5 rounded-2xl shadow-2xl">
             <div className="flex flex-row gap-3 items-center pb-3">
               <span className="w-2 h-10 rounded-2xl bg-orange-600/80"></span>
               <h2 className="text-2xl font-extrabold">Actors / Personas</h2>
@@ -252,7 +319,7 @@ export default function Prototype() {
             </div>
           </section>
 
-          <section className="my-10 p-5 rounded-2xl shadow-2xl">
+          <section id="User Stories" className="my-10 p-5 rounded-2xl shadow-2xl">
             <div className="flex flex-row gap-3 items-center pb-3">
               <span className="w-2 h-10 rounded-2xl bg-orange-600/80"></span>
               <h2 className="text-2xl font-extrabold">User Stories</h2>

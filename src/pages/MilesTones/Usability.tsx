@@ -2,9 +2,39 @@
 import Header from "../Header";
 
 import container_architecture from "../../assets/updated_container_diagram.png";
+import { useState } from "react";
 export default function Usability() {
-
-
+  const handleScrollTo = (id: string, name: string) => {
+      setActiveNav(name);
+      if (id === "M1 - Usability and Digital Accessibility") {
+        return;
+      }
+      const element = document.getElementById(id);
+      if (!element) return;
+  
+      // Try to scroll the local main container if it exists (we made it scrollable)
+      const container = document.getElementById('M1 - Usability and Digital Accessibility');
+      const header = document.getElementById('site-header');
+      const headerHeight = header ? header.offsetHeight : 0;
+  
+      if (container) {
+        // compute element position relative to container and scroll container
+        const elementRect = element.getBoundingClientRect();
+        const containerRect = container.getBoundingClientRect();
+        const offset = elementRect.top - containerRect.top + container.scrollTop - headerHeight - 8;
+        container.scrollTo({ top: offset, behavior: 'smooth' });
+        return;
+      }
+  
+      // fallback to window scrolling
+      const y = element.getBoundingClientRect().top + window.scrollY - headerHeight - 8;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    };
+    const [activeNav, setActiveNav] = useState('Updated Architecture');
+        const navItems = [
+        { name: 'M1 - Usability and Digital Accessibility', isHeader: true },
+        { name: 'Updated Architecture', indent: true }
+    ];
 
   return (
     <div className="flex min-h-screen ">

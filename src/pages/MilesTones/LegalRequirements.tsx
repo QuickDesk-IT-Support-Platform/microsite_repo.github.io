@@ -1,4 +1,5 @@
 // JSX-only component — explicit React import not required
+import { useState } from "react";
 import Header from "../Header";
 
 const gdprData = [
@@ -169,11 +170,85 @@ const SectionTitle = ({ children }: { children: string }) => (
 );
 
 export default function LegalRequirements() {
+  const handleScrollTo = (id: string, name: string) => {
+        setActiveNav(name);
+        if (id === "M3 - Legal Requirements") {
+          return;
+        }
+        const element = document.getElementById(id);
+        if (!element) return; 
+    
+        // Try to scroll the local main container if it exists (we made it scrollable)
+        const container = document.getElementById('M3 - Legal Requirements');
+        const header = document.getElementById('site-header');
+        const headerHeight = header ? header.offsetHeight : 0;
+    
+        if (container) {
+          // compute element position relative to container and scroll container
+          const elementRect = element.getBoundingClientRect();
+          const containerRect = container.getBoundingClientRect();
+          const offset = elementRect.top - containerRect.top + container.scrollTop - headerHeight - 8;
+          container.scrollTo({ top: offset, behavior: 'smooth' });
+          return;
+        }
+    
+        // fallback to window scrolling
+        const y = element.getBoundingClientRect().top + window.scrollY - headerHeight - 8;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+  };
+  const [activeNav, setActiveNav] = useState('Project Overview');
+        const navItems = [
+        { name: 'M3 - Legal Requirements', isHeader: true },
+        { name: 'Project Context', indent: true },
+        { name: 'Why Legal Requirements Matter', indent: true },
+        { name: 'GDPR Compliance', indent: true },
+        { name: 'Data Anonymization and Pseudonymization', indent: true },
+        { name: 'Right to be Forgotten and Data Retention', indent: true },
+        { name: 'Privacy Policy and Third-Party Data Sharing', indent: true },
+        { name: 'Safety and Protection Measures', indent: true },
+        { name: 'Licensing and Intellectual Property', indent: true },
+        { name: 'Sector-Specific Regulation', indent: true },
+        { name: 'Main Legal Risks and Mitigation', indent: true },
+        { name: 'Technical Risks', indent: true },
+        { name: 'Technical Debt and Maintainability', indent: true },
+        { name: 'SWOT Analysis', indent: true },
+        { name: 'TOWS Matrix Actions', indent: true },
+        { name: 'PESTEL Analysis', indent: true }
+  ];
+
   return (
     <div className="flex min-h-screen">
       <Header />
 
       <div className="flex pt-18 w-full">
+        {/* leftbar */}
+        <div className="hidden md:flex md:flex-col md:w-2/8 md:bg-gray-200 p-4 md:border-t-2 md:border-gray-300 md:sticky md:top-16">
+                {navItems.map((item, idx) => (
+              <div key={idx}>
+                {item.isHeader ? (
+                  <h2 className="text-orange-600 text-xl font-bold uppercase tracking-wider mt-6 mb-3 px-3">
+                    {item.name}
+                  </h2>
+                ) : (
+                  <div
+                    onClick={() => handleScrollTo(item.name,item.name)}
+                    className={`
+                      px-4 py-3 mb-1 rounded-xl cursor-pointer transition-all duration-300
+                      ${activeNav === item.name 
+                        ? 'bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-lg shadow-orange-500/30 transform scale-105' 
+                        : 'text-gray-600 hover:bg-orange-50 hover:text-orange-600 hover:translate-x-1'
+                      }
+                    `}
+                  >
+                    <div className="flex items-center justify-between">
+                      <span className="font-medium text-sm">{item.name}</span>
+                    </div>
+                  </div>
+                )}
+              </div>
+            ))}
+
+        </div>
         <div
           id="M3 - Legal Requirements"
           className="w-full md:w-8/8 p-4 md:p-20 bg-white md:h-[calc(100vh-4rem)] overflow-y-auto"
@@ -196,7 +271,7 @@ export default function LegalRequirements() {
             </div>
           </div>
 
-          <section className="my-10 p-5 rounded-2xl shadow-2xl">
+          <section id="Project Context" className="my-10 p-5 rounded-2xl shadow-2xl">
             <SectionTitle>Project Context</SectionTitle>
             <p className="text-sm md:text-xl leading-relaxed text-justify">
               QuickDesk is a technical support system that allows users to
@@ -206,7 +281,7 @@ export default function LegalRequirements() {
             </p>
           </section>
 
-          <section className="my-10 p-5 rounded-2xl shadow-2xl">
+          <section id="Why Legal Requirements Matter" className="my-10 p-5 rounded-2xl shadow-2xl">
             <SectionTitle>Why Legal Requirements Matter</SectionTitle>
             <ul className="grid gap-3 md:grid-cols-2 text-sm md:text-xl">
               {[
@@ -226,7 +301,7 @@ export default function LegalRequirements() {
             </p>
           </section>
 
-          <section className="my-10 p-5 rounded-2xl shadow-2xl">
+          <section id="GDPR Compliance" className="my-10 p-5 rounded-2xl shadow-2xl">
             <SectionTitle>GDPR Compliance</SectionTitle>
             <div className="grid gap-5 md:grid-cols-2">
               {gdprData.map((group) => (
@@ -242,7 +317,7 @@ export default function LegalRequirements() {
             </div>
           </section>
 
-          <section className="my-10 p-5 rounded-2xl shadow-2xl">
+          <section id="Data Anonymization and Pseudonymization" className="my-10 p-5 rounded-2xl shadow-2xl">
             <SectionTitle>Data Anonymization and Pseudonymization</SectionTitle>
             <div className="grid gap-5 md:grid-cols-2">
               {privacyMeasures.map((group) => (
@@ -258,7 +333,7 @@ export default function LegalRequirements() {
             </div>
           </section>
 
-          <section className="my-10 p-5 rounded-2xl shadow-2xl">
+          <section id="Right to be Forgotten and Data Retention" className="my-10 p-5 rounded-2xl shadow-2xl">
             <SectionTitle>Right to be Forgotten and Data Retention</SectionTitle>
             <div className="grid gap-4 md:grid-cols-4">
               {[
@@ -280,7 +355,7 @@ export default function LegalRequirements() {
             </p>
           </section>
 
-          <section className="my-10 p-5 rounded-2xl shadow-2xl">
+          <section id="Privacy Policy and Third-Party Data Sharing" className="my-10 p-5 rounded-2xl shadow-2xl">
             <SectionTitle>Privacy Policy and Third-Party Data Sharing</SectionTitle>
             <div className="overflow-x-auto">
               <table className="w-full min-w-[640px] border-collapse text-left">
@@ -302,7 +377,7 @@ export default function LegalRequirements() {
             </div>
           </section>
 
-          <section className="my-10 p-5 rounded-2xl shadow-2xl">
+          <section id="Safety and Protection Measures" className="my-10 p-5 rounded-2xl shadow-2xl">
             <SectionTitle>Safety and Protection Measures</SectionTitle>
             <div className="grid gap-4 md:grid-cols-4">
               {protectionMeasures.map(([title, text]) => (
@@ -314,7 +389,7 @@ export default function LegalRequirements() {
             </div>
           </section>
 
-          <section className="my-10 p-5 rounded-2xl shadow-2xl">
+          <section id="Licensing and Intellectual Property" className="my-10 p-5 rounded-2xl shadow-2xl">
             <SectionTitle>Licensing and Intellectual Property</SectionTitle>
             <div className="overflow-x-auto mb-6">
               <table className="w-full min-w-[760px] border-collapse text-left">
@@ -363,7 +438,7 @@ export default function LegalRequirements() {
             </div>
           </section>
 
-          <section className="my-10 p-5 rounded-2xl shadow-2xl">
+          <section id="Sector-Specific Regulation" className="my-10 p-5 rounded-2xl shadow-2xl">
             <SectionTitle>Sector-Specific Regulation</SectionTitle>
             <div className="overflow-x-auto">
               <table className="w-full min-w-[760px] border-collapse text-left">
@@ -387,7 +462,7 @@ export default function LegalRequirements() {
             </div>
           </section>
 
-          <section className="my-10 p-5 rounded-2xl shadow-2xl">
+          <section id="Main Legal Risks and Mitigation" className="my-10 p-5 rounded-2xl shadow-2xl">
             <SectionTitle>Main Legal Risks and Mitigation</SectionTitle>
             <div className="overflow-x-auto">
               <table className="w-full min-w-[720px] border-collapse text-left">
@@ -409,7 +484,7 @@ export default function LegalRequirements() {
             </div>
           </section>
 
-          <section className="my-10 p-5 rounded-2xl shadow-2xl">
+          <section id="Technical Risks" className="my-10 p-5 rounded-2xl shadow-2xl">
             <SectionTitle>Technical Risks</SectionTitle>
             <p className="text-sm md:text-xl leading-relaxed text-justify mb-5">
               QuickDesk depends on multiple interconnected services, external
@@ -438,7 +513,7 @@ export default function LegalRequirements() {
             </div>
           </section>
 
-          <section className="my-10 p-5 rounded-2xl shadow-2xl">
+          <section id="Technical Debt and Maintainability" className="my-10 p-5 rounded-2xl shadow-2xl">
             <SectionTitle>Technical Debt and Maintainability</SectionTitle>
             <div className="overflow-x-auto">
               <table className="w-full min-w-[760px] border-collapse text-left">
@@ -462,7 +537,7 @@ export default function LegalRequirements() {
             </div>
           </section>
 
-          <section className="my-10 p-5 rounded-2xl shadow-2xl">
+          <section id="SWOT Analysis" className="my-10 p-5 rounded-2xl shadow-2xl">
             <SectionTitle>SWOT Analysis</SectionTitle>
             <div className="grid gap-5 md:grid-cols-2">
               {swot.map((group) => (
@@ -478,7 +553,7 @@ export default function LegalRequirements() {
             </div>
           </section>
 
-          <section className="my-10 p-5 rounded-2xl shadow-2xl">
+          <section id="TOWS Matrix Actions" className="my-10 p-5 rounded-2xl shadow-2xl">
             <SectionTitle>TOWS Matrix Actions</SectionTitle>
             <div className="grid gap-4 md:grid-cols-2">
               {[
@@ -496,7 +571,7 @@ export default function LegalRequirements() {
             </div>
           </section>
 
-          <section className="my-10 p-5 rounded-2xl shadow-2xl">
+          <section id="PESTEL Analysis" className="my-10 p-5 rounded-2xl shadow-2xl">
             <SectionTitle>PESTEL Analysis</SectionTitle>
             <div className="grid gap-4 md:grid-cols-2">
               {pestel.map(([area, text]) => (
