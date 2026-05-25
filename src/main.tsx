@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Milestones from './pages/MilesTones/Inception.tsx';
 import Documentacao from './pages/Documentacao.tsx';
 import Equipe from './pages/Equipe.tsx';
@@ -18,7 +18,7 @@ import Elaboration from './pages/MilesTones/Elaboration.tsx';
 // import { Construction } from 'lucide-react';
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter basename='/microsite_repo.github.io'>
+    <HashRouter basename='/microsite_repo.github.io'>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/Milestones" element={<Milestones />} />
@@ -35,6 +35,6 @@ createRoot(document.getElementById('root')!).render(
         {/* 404 - Not Found route (catch-all) */}
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>
 )
