@@ -55,8 +55,7 @@ export default function Construction() {
                 <div
                   onClick={() => handleScrollTo(item.name,item.name)}
                   className={`
-                    px-4 py-3 mb-1 rounded-xl cursor-pointer transition-all duration-300
-                    ${item.sub ? 'ml-4' : ''}
+                    px-4 py-3 mb-1 rounded-xl cursor-pointer transition-all duration-300´
                     ${activeNav === item.name 
                       ? 'bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-lg shadow-orange-500/30 transform scale-105' 
                       : 'text-gray-600 hover:bg-orange-50 hover:text-orange-600 hover:translate-x-1'
