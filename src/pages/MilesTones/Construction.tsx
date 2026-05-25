@@ -2,16 +2,76 @@
 import Header from "../Header";
 
 import container_architecture from "../../assets/updated_container_diagram.png";
+import { useState } from "react";
+
 export default function Construction() {
+  const handleScrollTo = (id: string, name: string) => {
+    setActiveNav(name);
+    if (id === "M1 - Elaboration") {
+      return;
+    }
+    const element = document.getElementById(id);
+    if (!element) return;
 
+    // Try to scroll the local main container if it exists (we made it scrollable)
+    const container = document.getElementById('inception-main');
+    const header = document.getElementById('site-header');
+    const headerHeight = header ? header.offsetHeight : 0;
 
+    if (container) {
+      // compute element position relative to container and scroll container
+      const elementRect = element.getBoundingClientRect();
+      const containerRect = container.getBoundingClientRect();
+      const offset = elementRect.top - containerRect.top + container.scrollTop - headerHeight - 8;
+      container.scrollTo({ top: offset, behavior: 'smooth' });
+      return;
+    }
+
+    // fallback to window scrolling
+    const y = element.getBoundingClientRect().top + window.scrollY - headerHeight - 8;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  };
+  const [activeNav, setActiveNav] = useState('Project Overview');
+      const navItems = [
+      { name: 'M3 - Construction', isHeader: true },
+      { name: 'Updated Architecture', indent: true },
+      { name: 'MVP DEMO', indent: true, sub: true }
+    ];
 
   return (
     <div className="flex min-h-screen ">
       <Header />
 
     <div className="flex pt-18 w-full">
-  
+      {/* leftbar */}
+      <div className="hidden md:flex md:flex-col md:w-2/8 md:bg-gray-200 p-4 md:border-t-2 md:border-gray-300 md:sticky md:top-16">
+              {navItems.map((item, idx) => (
+            <div key={idx}>
+              {item.isHeader ? (
+                <h2 className="text-orange-600 text-xl font-bold uppercase tracking-wider mt-6 mb-3 px-3">
+                  {item.name}
+                </h2>
+              ) : (
+                <div
+                  onClick={() => handleScrollTo(item.name,item.name)}
+                  className={`
+                    px-4 py-3 mb-1 rounded-xl cursor-pointer transition-all duration-300
+                    ${item.sub ? 'ml-4' : ''}
+                    ${activeNav === item.name 
+                      ? 'bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-lg shadow-orange-500/30 transform scale-105' 
+                      : 'text-gray-600 hover:bg-orange-50 hover:text-orange-600 hover:translate-x-1'
+                    }
+                  `}
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="font-medium text-sm">{item.name}</span>
+                  </div>
+                </div>
+              )}
+            </div>
+          ))}
+
+      </div>
   {/* main content */}
     <div id="M3 - Construction" className="w-full md:w-8/8 p-4 md:p-20 bg-white md:h-[calc(100vh-4rem)] overflow-y-auto">
         
